@@ -28,14 +28,14 @@ export const NavArray = [
         itemL: "itemdropdown",
         dropdownlinks: [
           {
-            link: "/about/cases",
+            link: "/case",
             linktext: "Cases",
             classbody: "secondlayoutbodydropdownitem",
             classname: "secondlayoutnamedropdownitem",
             classitem: "secondlayoutitemdropdownitem",
           },
           {
-            link: "/about/about",
+            link: "/about",
             linktext: "About",
             classbody: "secondlayoutbodydropdownitem",
             classname: "secondlayoutnamedropdownitem",

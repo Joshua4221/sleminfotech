@@ -1,21 +1,21 @@
 import React from "react";
 import Header from "../../Universal-Components/header";
 import { ImageTextContainer } from "../../Universal-Components/image_text";
-import { HeroArray, outSourcingArr } from "../../Util/Outsorucing/HeroArray";
+import { outStaffArr } from "../../Util/outstaff";
 import ContactSect from "../../Universal-Components/contact_sect";
-const OutSourcingPage = () => {
+const OutStaffComp = () => {
   return (
     <div>
       <Header
-        title={"OutSourcing"}
+        title={"Outstaffing"}
         content={
           "Plavno provides you with highly skilled remote Senior IT Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result."
         }
       />
-      <ImageTextContainer imageTextArr={outSourcingArr} />
+      <ImageTextContainer imageTextArr={outStaffArr} />
       <ContactSect />
     </div>
   );
 };
 
-export default OutSourcingPage;
+export default OutStaffComp;
