@@ -67,7 +67,7 @@ export const NavArray = [
           },
           {
             link: "/services/outsourcing",
-            linktext: "OUTSOURCING",
+            linktext: "OutSourcing",
             classbody: "secondlayoutbodydropdownitem",
             classname: "secondlayoutnamedropdownitem",
             classitem: "secondlayoutitemdropdownitem",

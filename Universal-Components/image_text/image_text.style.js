@@ -8,7 +8,7 @@ export const ImageTextHolder = styled.div`
   align-items: center;
   padding: 40px;
   .side-img {
-    width: 570px;
+    width: ${({ projects }) => (projects ? "50%" : "50%")};
     height: inherit;
     left: 135px;
     top: 509px;
@@ -28,21 +28,25 @@ export const ImageTextHolder = styled.div`
     }
   }
   .side-text {
-    width: 605px;
+    width: ${({ projects }) => (projects ? "50%" : "38%")};
     .text-div {
       width: 100%;
       margin-top: 4rem;
       p {
         font-style: normal;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 20px;
         line-height: 40px;
+        color: #1b2d6b;
+        white-space: pre-line;
       }
       h2 {
+        color: #1b2d6b;
         font-style: normal;
-        font-weight: bolder;
-        font-size: 32px;
+        font-weight: 800;
+        font-size: 42px;
         line-height: 38px;
+        margin-bottom: 30px;
       }
       .mutliContentContainer {
         p {

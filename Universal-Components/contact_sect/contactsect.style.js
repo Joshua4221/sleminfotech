@@ -7,7 +7,7 @@ export const StyledContactSect = styled.div`
   justify-content: space-between;
   padding: 10rem;
   color: ${ColorLightMode.PrimColor};
-  background-color: ${ColorLightMode.MajorColor};
+  background-color: ${ColorLightMode.SectionColor};
   @media screen and (max-width: 600px) {
     padding: 2rem 1rem;
   }

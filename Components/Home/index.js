@@ -191,8 +191,6 @@ const HomePage = ({ theme, companyArray }) => {
           <div className={"developedProjectbody"}>
             {developedProject?.map((item, key) => (
               <div key={key}>
-                {/* {console.log(index)} */}
-                {console.log(key)}
                 {index === key && (
                   <div className={"developedProjectbodydata"}>
                     <div className={"developedProjectbodydataimage"}>

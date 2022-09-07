@@ -13,7 +13,8 @@ export const CCardDiv = styled.div`
   text-align: center;
 
   .ccardbody {
-    width: ${({ details }) => (details ? "20%" : "48%")};
+    width: ${({ details, projects }) =>
+      details ? "20%" : projects ? "100%" : "48%"};
     text-align: ${({ details }) => (details ? "center" : "left")};
     color: ${({ color }) => color.MajorColor};
     padding: ${({ about }) => (about ? "20px 25px" : "20px 10px")};
@@ -22,10 +23,11 @@ export const CCardDiv = styled.div`
     background-color: ${({ color, details }) =>
       details && color.InputColorBorder};
     /* box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.151); */
-    border: 1px solid rgba(0, 0, 0, 0.151);
+    border: ${({ projects }) => !projects && "1px solid rgba(0, 0, 0, 0.151)"};
 
     &:hover {
-      box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.151);
+      box-shadow: ${({ projects }) =>
+        !projects && "0px 3px 6px 0px rgba(0, 0, 0, 0.151)"};
     }
 
     .ccardIconbody {
@@ -48,15 +50,29 @@ export const CCardDiv = styled.div`
       width: ${({ about }) => (about ? "100%" : "80%")};
       margin: ${({ about }) => (about ? "0px" : "0px auto")};
 
-      h3 {
+      .header {
+        font-family: ${({ projects }) => projects && "'MuseoModerno', cursive"};
+        margin-bottom: ${({ projects }) => projects && "40px"};
         padding: 10px 2px;
-        font-size: 1.25rem;
+        font-size: ${({ projects }) => (projects ? "5rem" : "1.25rem")};
         font-weight: 800;
+        line-height: ${({ projects }) => (projects ? "5rem" : "1.75rem")};
+      }
+
+      .subHeader {
+        padding: 10px 2px;
+        white-space: ${({ projects }) => projects && "pre-wrap"};
+        margin: ${({ projects }) => projects && "20px 0px"};
+        opacity: ${({ projects }) => projects && "0.5"};
+        font-size: ${({ projects }) => (projects ? "1.4rem" : "1.25rem")};
+        font-weight: 500;
         line-height: 1.75rem;
       }
 
       p {
-        opacity: 0.55;
+        opacity: ${({ projects }) => (projects ? "unset" : "0.55")};
+        font-size: ${({ projects }) => projects && "20px"};
+        margin-bottom: ${({ projects }) => projects && "60px"};
         line-height: 1.625rem;
         padding: 10px 0px;
       }
@@ -70,6 +86,10 @@ export const CCardDiv = styled.div`
 
             &:hover {
               gap: 10px;
+            }
+
+            h3 {
+              font-size: 24px;
             }
 
             .ccardLinkIcon {

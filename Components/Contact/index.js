@@ -1,20 +1,16 @@
 import React from "react";
-import HeadingSection from "../../Universal-Components/HeadingSection";
 import { BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF, FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import { Contact } from "./style";
-import Header from "../../Universal-Components/header";
 import ContactSect from "../../Universal-Components/contact_sect";
+import HeroSubSection from "../../Universal-Components/HeroSubSection";
+import { ContactHeroArray } from "../../Util/contact";
+
 const ContactPageComp = () => {
   return (
     <Contact>
-      <Header
-        title={"Contact Us"}
-        content={
-          "Plavno provides you with highly skilled remote Senior IT Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result."
-        }
-      />
+      <HeroSubSection herosubsectionarray={ContactHeroArray} />
       <div className="contact-info">
         <p className="contact-info-p">
           No matter if you come to us with a ready project, idea, or only with

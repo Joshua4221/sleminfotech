@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { withTheme } from "styled-components";
+import ContactSect from "../contact_sect";
 import FormComponent from "../FormComponent";
+import Modals from "../Modals";
 import { FooterDiv } from "./footer.style";
 
 const FooterComponent = ({ footerArray, theme }) => {
@@ -57,6 +59,7 @@ const FooterComponent = ({ footerArray, theme }) => {
                           </div>
                         )}
                       </button>
+                      {/* <Modals ModalComponent={ContactSect} /> */}
                     </div>
                   ) : item.linkarray ? (
                     <div className={`${item.classlinkbody}`}>

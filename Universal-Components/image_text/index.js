@@ -7,15 +7,22 @@ import {
   StyledIconDiv,
 } from "./image_text.style";
 import Image from "next/image";
+import C_Cards from "../C_Cards";
 
-export const ImageTextContainer = ({ imageTextArr }) => {
+export const ImageTextContainer = ({ imageTextArr, projects }) => {
   return (
     <div>
       {imageTextArr.map((item, key) => (
         <>
-          <ImageTextHolder layout={key % 2 === 1 && "row"}>
+          <ImageTextHolder layout={key % 2 === 1 && "row"} projects={projects}>
             <div className="side-img">
-              <Image src={item.image} />
+              <Image
+                src={item.image}
+                alt="yes"
+                priority
+                placeholder="blur"
+                blurDataURL
+              />
             </div>
             <div className="side-text">
               <div className="text-div">
@@ -30,6 +37,11 @@ export const ImageTextContainer = ({ imageTextArr }) => {
                     <></>
                   )}
                 </div>
+                {item.ccardArray && (
+                  <div>
+                    <C_Cards ccardArray={item.ccardArray} projects="project" />
+                  </div>
+                )}
               </div>
             </div>
           </ImageTextHolder>
