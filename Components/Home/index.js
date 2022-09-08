@@ -63,16 +63,13 @@ const HomePage = ({ theme, companyArray }) => {
         <div className={"heroSectionDetails"}>
           <div className={"heroSectionDetailsbdy"}>
             <div className={"heroSectionDetailsbdyheader"}>
-              <h3>Hire Experienced Senior IT Experts in 24 hrs</h3>
-              <p>
-                Proactively coordinate quality quality vectors vis-a-vis supply
-                chains. Quickly engage client-centric web services.
-              </p>
+              <h3>Contact Us To Hire Tech Experts</h3>
+              <p>Quickly engage client web services.</p>
             </div>
 
             <div className={"heroSectionDetailsbdyfooter"}>
               <div className={"heroSectionDetailsbdyfooterheader"}>
-                <button>Hire top IT experts</button>
+                <button>Hire Tech experts</button>
               </div>
               <div className={"heroSectionDetailsbdyfootercontent"}>
                 <p>Featured In</p>
@@ -133,7 +130,7 @@ const HomePage = ({ theme, companyArray }) => {
             <div className={"partnersbodyOne"}>
               <p>
                 Together with our partners, we shape the future of digital
-                entertainment.
+                World.
               </p>
             </div>
             <div className={"partnersbodyTwo"}>
@@ -164,7 +161,7 @@ const HomePage = ({ theme, companyArray }) => {
         <div className={"websolution"}>
           <HeadingSection
             subtitle={
-              "High-quality web/mobile development solutions that are crucial for innovative app"
+              "High-quality Software solutions that are crucial for Business innovation"
             }
           />
           <div className={"webSolutionIncreament"}>
@@ -221,7 +218,7 @@ const HomePage = ({ theme, companyArray }) => {
           <HeadingSection
             title={"Technologies"}
             paragraph={
-              "Plavno provides you with motivated and experienced remote Senior IT Experts. With our business model, you have options to choose the solution that best fits your need."
+              "Salem Info Tech provides you with motivated and experienced remote Tech Experts. With our business model, you have options to choose the solution that best fits your need."
             }
           />
           <div>
