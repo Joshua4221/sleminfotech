@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const ModalStyles = styled.div`
-    z-index:3;
+    z-index:20;
     padding:50px 0px 0px 0px;
     position:fixed;
     left:0;
@@ -18,12 +18,25 @@ export const ModalStyles = styled.div`
         .modal-content{
             /* background-color: red; */
             /* width: 90%; */
+            height: 80%;
             margin: 10px auto;
             display: flex;
+            align-items: center;
             justify-content: center;
 
             .modal-component{
-                /* margin: 30px 10px; */
+                width: 50%;
+                background-color: ${({ color }) => color.MajorColor};
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 30px 20px;
+                border-radius: 8px;
+
+                .components{
+                    width: 100%;
+                    border: 1px solid red;
+                }
             }
     
             .icon{

@@ -1,10 +1,42 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const left = keyframes`
+  from{
+    left:-50px; 
+    opacity:0.5
+  } 
+  to{
+    left:0; 
+    opacity:1
+  }
+`;
+
+const right = keyframes`
+  from{
+    right:-50px; 
+    opacity:0
+  } 
+  to{
+    right:0; 
+    opacity:1
+  }
+`;
+
+const fade = keyframes`
+  0%{
+    opacity:0
+  }
+  100%{
+    opacity:1
+  }
+`;
 
 export const HomeDiv = styled.div`
   .heroSection {
     background-color: ${({ color }) => color.PrimColor};
     height: 100vh;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding: 0px 0px 0px 20px;
     font-family: "Poppins", sans-serif;
@@ -82,7 +114,7 @@ export const HomeDiv = styled.div`
     }
 
     .heroSectionGraphics {
-      width: 55%;
+      width: 50%;
       height: 100%;
       padding: 0px 0px;
 
@@ -109,6 +141,10 @@ export const HomeDiv = styled.div`
   .homebody {
     .aboutSection {
       padding: 40px;
+
+      @media (max-width: 500px) {
+        padding: 40px 10px;
+      }
     }
 
     .partners {
@@ -171,104 +207,187 @@ export const HomeDiv = styled.div`
           flex-direction: column;
         }
       }
+
+      @media (max-width: 500px) {
+        padding: 40px 10px;
+      }
     }
 
     .developer {
       padding: 40px;
-    }
-  }
-
-  .websolution {
-    padding: 40px;
-
-    .webSolutionIncreament {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      background-color: ${({ color }) => color.InputColorBorder};
-
-      .data {
-        width: 16%;
-        padding: 15px 0px;
-      }
-
-      .dataColor {
-        background-color: ${({ color }) => color.FooterTextColor};
+      @media (max-width: 500px) {
+        padding: 40px 10px;
       }
     }
 
-    .solution {
-      display: flex;
-      justify-content: space-between;
+    .websolution {
+      padding: 40px;
 
-      .solutiondata {
-        width: 16%;
-
-        .solutionnum {
-          padding: 10px 0px;
-          margin: 10px 0px;
-          color: ${({ color }) => color.MajorColor};
-          p {
-            font-size: 18px;
-            font-weight: 500;
-          }
-        }
-
-        .solutiontitle {
-          padding: 10px 0px;
-          margin: 10px 0px;
-          color: ${({ color }) => color.MajorColor};
-          p {
-            font-size: 18px;
-            font-weight: 600;
-          }
-        }
-      }
-    }
-
-    .developedProjectbody {
-      padding: 40px 0px;
-      .developedProjectbodydata {
+      .webSolutionIncreament {
         width: 100%;
         display: flex;
-        align-items: center;
+        justify-content: space-between;
+        background-color: ${({ color }) => color.InputColorBorder};
+
+        .data {
+          width: 16%;
+          padding: 15px 0px;
+        }
+
+        .dataColor {
+          background-color: ${({ color }) => color.FooterTextColor};
+        }
+      }
+
+      .solution {
+        display: flex;
         justify-content: space-between;
 
-        .developedProjectbodydataimage {
-          width: 46%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          /* padding: 0px 180px; */
+        .solutiondata {
+          width: 16%;
 
-          .developedProjectbodydataimagedata {
-            box-shadow: -20px 0px 40px 50px rgba(240, 247, 255, 0.302);
-            width: 50%;
-            border: 1px solid red;
-            border-radius: 30px;
+          .solutionnum {
+            padding: 10px 0px;
+            margin: 10px 0px;
+            color: ${({ color }) => color.MajorColor};
+            p {
+              font-size: 18px;
+              font-weight: 500;
+            }
+          }
+
+          .solutiontitle {
+            padding: 10px 0px;
+            margin: 10px 0px;
+            color: ${({ color }) => color.MajorColor};
+            p {
+              font-size: 18px;
+              font-weight: 600;
+            }
           }
         }
 
-        .developedProjectbodydatadetails {
-          width: 48%;
+        @media (max-width: 702px) {
+          display: none;
+        }
+      }
 
-          .details {
-            font-size: 52px;
-            font-weight: 400;
-            color: ${({ color }) => color.MajorColor};
+      .developedProjectbody {
+        padding: 40px 0px;
+        .developedProjectbodydata {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .developedProjectbodydataimage {
+            width: 46%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* padding: 0px 180px; */
+
+            .developedProjectbodydataimagedata {
+              box-shadow: -20px 0px 40px 50px rgba(240, 247, 255, 0.302);
+              width: 50%;
+              border-radius: 30px;
+            }
+
+            @media (max-width: 702px) {
+              width: 100%;
+            }
           }
 
-          .detailspar {
-            font-size: 20px;
-            padding: 20px 0px;
-            font-weight: 500;
-            width: 80%;
+          .developedProjectbodydatadetails {
+            width: 48%;
+
+            .details {
+              font-size: 52px;
+              font-weight: 400;
+              color: ${({ color }) => color.MajorColor};
+            }
+
+            .detailspar {
+              font-size: 20px;
+              padding: 20px 0px;
+              font-weight: 500;
+              width: 80%;
+
+              @media (max-width: 702px) {
+                width: 100%;
+              }
+            }
+
+            @media (max-width: 702px) {
+              width: 100%;
+              text-align: center;
+            }
+          }
+
+          @media (max-width: 702px) {
+            flex-direction: column;
+          }
+        }
+
+        @media (max-width: 500px) {
+          padding: 40px 10px;
+        }
+      }
+
+      @media (max-width: 500px) {
+        padding: 40px 10px;
+      }
+    }
+
+    .technology {
+      padding: 40px;
+
+      .techControlerbody {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .techControlerMain {
+          background-color: ${({ color }) => color.InputColorBorder};
+          width: 60px;
+          height: 10px;
+          border-radius: 8px;
+          margin: 0px 10px;
+          cursor: pointer;
+        }
+
+        .techControler {
+          background-color: ${({ color }) => color.FooterTextColor};
+        }
+      }
+
+      @media (max-width: 500px) {
+        padding: 40px 10px;
+      }
+    }
+
+    .clientProject {
+      padding: 40px;
+
+      .clientProjectBody {
+        .clientBody {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .clientText {
+            width: 48%;
+          }
+
+          .clientImage {
+            width: 45%;
           }
         }
       }
+
+      @media (max-width: 500px) {
+        padding: 40px 10px;
+      }
     }
-  }
-  .technology {
-    padding: 40px;
   }
 `;

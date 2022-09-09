@@ -82,7 +82,7 @@ export const NavArray = [
         ],
       },
       {
-        link: "/projects",
+        link: "/career",
         linktext: "CAREERS",
         classbody: "secondlayoutbody",
         classname: "secondlayoutname",

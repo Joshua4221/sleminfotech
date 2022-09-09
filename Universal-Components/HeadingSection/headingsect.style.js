@@ -14,20 +14,28 @@ export const HeadingSectionDiv = styled.div`
 
     h3 {
       text-align: center;
-      font-size: 46px;
-      font-weight: 500;
+      font-size: 52px;
+      font-weight: 800;
       font-style: normal;
       color: ${({ color, title }) =>
         title === "Partners" ? color.PrimaryColor : color.MajorColor};
+
+      @media screen and (max-width: 500px) {
+        font-size: 32px;
+      }
     }
 
     h4 {
       text-align: center;
-      font-size: 46px;
-      font-weight: 900;
+      font-size: 32px;
+      font-weight: 600;
       font-style: normal;
       color: ${({ color, title }) =>
         title === "Partners" ? color.PrimaryColor : color.MajorColor};
+
+      @media screen and (max-width: 500px) {
+        font-size: 24px;
+      }
     }
 
     p {
@@ -43,6 +51,15 @@ export const HeadingSectionDiv = styled.div`
 
     @media screen and (max-width: 950px) {
       width: 100%;
+      padding: 0px;
     }
+  }
+
+  @media screen and (max-width: 950px) {
+    padding: 0px;
+  }
+
+  @media screen and (max-width: 702px) {
+    padding: 0px;
   }
 `;

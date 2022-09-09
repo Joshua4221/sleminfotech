@@ -3,12 +3,13 @@ import styled from "styled-components";
 export const HeroSubSectionDiv = styled.div`
   width: 100%;
   height: 60vh;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     #4ba1ea 10%,
     #47d7ed 40%,
     #4ba1ea
-  );
+  ); */
+  background-color: ${({ color }) => color.SectionColor};
   display: flex;
   align-items: center;
   padding: 30px;

@@ -4,9 +4,15 @@ import React from "react";
 import { withTheme } from "styled-components";
 import { CCardDiv } from "./cards.style";
 
-const CCards = ({ ccardArray, theme, about, details, projects }) => {
+const CCards = ({ ccardArray, theme, about, details, projects, service }) => {
   return (
-    <CCardDiv color={theme} about={about} details={details} projects={projects}>
+    <CCardDiv
+      color={theme}
+      about={about}
+      details={details}
+      projects={projects}
+      service={service}
+    >
       {ccardArray.map((item, key) => (
         <div key={key} className={"ccardbody"}>
           {item.image && (
