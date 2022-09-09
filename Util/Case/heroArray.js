@@ -25,10 +25,10 @@ export const caseArr = [
   {
     ccardArray: [
       {
-        header: "AppDoc",
+        header: "JamaVoice",
         subHeader: "Mobile    Web",
         paragraph:
-          "AppDoc is an e-Health project, that has a purpose of connecting patients and doctors and therefore taking their communications online.",
+          "Jamavoice online platform Instantly convert any text to real human voiceover that does not sound like computer voice.You will be surprised discover this Real Human Text to Speech Converter.",
         linkText: "Discover the project",
         linkIcon: FaArrowRight,
       },
@@ -38,10 +38,10 @@ export const caseArr = [
   {
     ccardArray: [
       {
-        header: "Fasol",
+        header: "Poshtok Chat Application",
         subHeader: "Education   e-Commerce",
         paragraph:
-          "Fasol App is an online music school offering 1 on 1 music lessons for people all over the world.",
+          "App built for creating short form of mobile videos and messaging and entertainments.",
         linkText: "Discover the project",
         linkIcon: FaArrowRight,
       },
@@ -52,10 +52,10 @@ export const caseArr = [
     image: ImageThree,
     ccardArray: [
       {
-        header: "BelVEB",
+        header: "Dt World",
         subHeader: "Education   e-Commerce",
         paragraph:
-          "Online banking development for private clients of BelVeb Bank.",
+          "Online Staff Management System App developed for private Company staff management.",
         linkText: "Discover the project",
         linkIcon: FaArrowRight,
       },
@@ -64,41 +64,14 @@ export const caseArr = [
   {
     ccardArray: [
       {
-        header: "Cognitive Ops",
+        header: "EasyHealth",
         subHeader: "Education   e-Commerce",
         paragraph:
-          "CognitiveOps delivers AI-driven next-generation solutions to expand enterprise efficiency and create better business.",
+          "EasyHealth is an e-Health project, that has a purpose of connecting patients and doctors and therefore taking their communications online.",
         inkText: "Discover the project",
         linkIcon: FaArrowRight,
       },
     ],
     image: Imagefour,
-  },
-  {
-    image: Imagefive,
-
-    ccardArray: [
-      {
-        header: "Butlers",
-        subHeader: "Web   Social media",
-        paragraph:
-          "Butlers offers customers to wash & clean their clothes based on geolocation.",
-        linkText: "Discover the project",
-        linkIcon: FaArrowRight,
-      },
-    ],
-  },
-  {
-    image: Imagesix,
-    ccardArray: [
-      {
-        header: "Mersedes-Benz",
-        subHeader: "Web   Social media",
-        paragraph:
-          "CRM and Marketplace platform for ensuring stable operation when connecting many dealers and synchronize the database in real time by the availability of spare parts in warehouse.",
-        inkText: "Discover the project",
-        linkIcon: FaArrowRight,
-      },
-    ],
   },
 ];

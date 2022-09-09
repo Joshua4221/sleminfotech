@@ -19,7 +19,7 @@ const AboutComp = () => {
       <Header
         title={"About Us"}
         content={
-          "Plavno provides you with highly skilled remote Senior IT Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result."
+          "Slem Info Tech provides you with highly skilled remote Tech Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result."
         }
       />
       <ImageTextContainer imageTextArr={aboutImageTextArr} />
@@ -40,7 +40,7 @@ const AboutComp = () => {
             classL="iconText"
             title={"header"}
             text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+              "At Slem Info Tech we introduce you to our Tech Experts within 24hrs."
             }
             Icon={<FiGlobe />}
           />
@@ -48,7 +48,7 @@ const AboutComp = () => {
             classL="iconText"
             title={"header"}
             text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+              "At Slem Info Tech, we introduce you to our Tech Experts within 24hrs."
             }
             Icon={<FiGlobe />}
           />
@@ -56,7 +56,7 @@ const AboutComp = () => {
             classL="iconText"
             title={"header"}
             text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+              "At Slem Info Tech, we introduce you to our Tech Experts within 24hrs."
             }
             Icon={<FiGlobe />}
           />
@@ -64,7 +64,7 @@ const AboutComp = () => {
             classL="iconText"
             title={"header"}
             text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+              "At Slem Info Tech, we introduce you to our Tech Experts within 24hrs."
             }
             Icon={<FiGlobe />}
           />
@@ -72,7 +72,7 @@ const AboutComp = () => {
             classL="iconText"
             title={"header"}
             text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+              "At Slem Info Tech, we introduce you to our Tech Experts within 24hrs."
             }
             Icon={<FiGlobe />}
           />
@@ -80,7 +80,7 @@ const AboutComp = () => {
             classL="iconText"
             title={"header"}
             text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+              "At Slem Info Tech, we introduce you to our Tech Experts within 24hrs."
             }
             Icon={<FiGlobe />}
           />

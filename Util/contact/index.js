@@ -3,7 +3,7 @@ export const ContactHeroArray = [
     header: "Contact Us",
   },
   {
-    text: `Plavno provides you with highly skilled remote Senior IT Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result.`,
+    text: `Slem Info Tech provides you with highly skilled remote Tech Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result.`,
   },
 ];
 

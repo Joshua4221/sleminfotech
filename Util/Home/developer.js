@@ -7,7 +7,7 @@ export const DeveloperArray = [
   },
   {
     header: "Interview or Scope of Work (SOW)",
-    paragraph: `Within 24hrs, we will share two resumes of IT Experts that match your need. For Outstaffing you will be asked for a convenient time to schedule an interview with candidates.`,
+    paragraph: `Within 24hrs, we will share two resumes of Tech Experts that match your need. For Outstaffing you will be asked for a convenient time to schedule an interview with candidates.`,
   },
   {
     header: "Start Working",
