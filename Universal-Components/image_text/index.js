@@ -38,7 +38,7 @@ export const ImageTextContainer = ({ imageTextArr, projects }) => {
                   )}
                 </div>
                 {item.ccardArray && (
-                  <div>
+                  <div className="containing">
                     <C_Cards ccardArray={item.ccardArray} projects="project" />
                   </div>
                 )}

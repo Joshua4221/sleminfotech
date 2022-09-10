@@ -9,10 +9,12 @@ export const NavArray = [
     section: [
       {
         image: Logo,
-        // text: "SALEM INFO TECH",
+        imageText: "SALEM INFO TECH",
         classbody: "firstlayoutbody",
         classname: "firstlayoutname",
         classitem: "firstlayoutitem",
+        classitemimage: "firstlayoutitemimage",
+        classitemtext: "firstlayoutitemtext",
       },
     ],
   },
@@ -82,7 +84,7 @@ export const NavArray = [
         ],
       },
       {
-        link: "/projects",
+        link: "/career",
         linktext: "CAREERS",
         classbody: "secondlayoutbody",
         classname: "secondlayoutname",

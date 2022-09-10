@@ -8,7 +8,7 @@ export const ImageTextHolder = styled.div`
   align-items: center;
   padding: 40px;
   .side-img {
-    width: ${({ projects }) => (projects ? "50%" : "50%")};
+    width: ${({ projects }) => (projects ? "48%" : "50%")};
     height: inherit;
     left: 135px;
     top: 509px;
@@ -22,16 +22,21 @@ export const ImageTextHolder = styled.div`
         height: inherit;
       }
     }
+
+    @media screen and (max-width: 920px) {
+      width: 100%;
+    }
     @media screen and (max-width: 700px) {
       height: inherit;
       margin: 1rem 0;
     }
   }
   .side-text {
-    width: ${({ projects }) => (projects ? "50%" : "38%")};
+    width: ${({ projects }) => (projects ? "48%" : "38%")};
     .text-div {
       width: 100%;
       margin-top: 4rem;
+
       p {
         font-style: normal;
         font-weight: 500;
@@ -54,6 +59,11 @@ export const ImageTextHolder = styled.div`
         }
       }
     }
+
+    @media screen and (max-width: 920px) {
+      width: 100%;
+    }
+
     @media screen and (max-width: 700px) {
       .text-div {
         h2 {

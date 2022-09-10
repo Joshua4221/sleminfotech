@@ -13,9 +13,10 @@ export const CCardDiv = styled.div`
   text-align: center;
 
   .ccardbody {
-    width: ${({ details, projects }) =>
-      details ? "20%" : projects ? "100%" : "48%"};
-    text-align: ${({ details }) => (details ? "center" : "left")};
+    width: ${({ details, projects, service }) =>
+      details ? "20%" : projects ? "100%" : service ? "32%" : "48%"};
+    text-align: ${({ details, service }) =>
+      details ? "center" : service ? "center" : "left"};
     color: ${({ color }) => color.MajorColor};
     padding: ${({ about }) => (about ? "20px 25px" : "20px 10px")};
     border-radius: 20px;
@@ -31,7 +32,8 @@ export const CCardDiv = styled.div`
     }
 
     .ccardIconbody {
-      background-color: ${({ color }) => color.BorderColor};
+      background-color: ${({ color, service }) =>
+        service ? color.InputColorBorder : color.BorderColor};
       width: 80px;
       margin: ${({ about }) => (about ? "20px 0px" : "20px auto")};
       padding: 20px;
@@ -47,7 +49,8 @@ export const CCardDiv = styled.div`
     }
 
     .ccardDetails {
-      width: ${({ about }) => (about ? "100%" : "80%")};
+      width: ${({ about, projects }) =>
+        about ? "100%" : projects ? "100%" : "80%"};
       margin: ${({ about }) => (about ? "0px" : "0px auto")};
 
       .header {
@@ -57,6 +60,19 @@ export const CCardDiv = styled.div`
         font-size: ${({ projects }) => (projects ? "5rem" : "1.25rem")};
         font-weight: 800;
         line-height: ${({ projects }) => (projects ? "5rem" : "1.75rem")};
+
+        @media screen and (max-width: 650px) {
+          font-size: ${({ projects }) => projects === "project" && "64px"};
+        }
+
+        @media screen and (max-width: 550px) {
+          font-size: ${({ projects }) => projects && "64px"};
+          margin-bottom: ${({ projects }) => projects && "0px"};
+        }
+
+        @media screen and (max-width: 400px) {
+          font-size: ${({ projects }) => projects && "42px"};
+        }
       }
 
       .subHeader {
@@ -78,7 +94,7 @@ export const CCardDiv = styled.div`
       }
 
       .ccardLink {
-        width: 60%;
+        /* width: 60%; */
         a {
           .ccardLinkBody {
             display: flex;
@@ -89,7 +105,7 @@ export const CCardDiv = styled.div`
             }
 
             h3 {
-              font-size: 24px;
+              font-size: 16px;
             }
 
             .ccardLinkIcon {
@@ -104,14 +120,15 @@ export const CCardDiv = styled.div`
           }
         }
 
-        @media screen and (max-width: 880px) {
+        /* @media screen and (max-width: 880px) {
           width: 70%;
-        }
+        } */
       }
     }
 
     @media (max-width: 950px) {
-      width: 45%;
+      width: ${({ projects }) => (projects ? "100%" : "45%")};
+      margin: ${({ projects }) => projects === "projects" && "0px"};
     }
 
     @media (max-width: 600px) {
@@ -120,7 +137,8 @@ export const CCardDiv = styled.div`
   }
 
   @media (max-width: 950px) {
-    justify-content: center;
+    justify-content: ${({ projects }) =>
+      projects === "clientProject" ? "flex-start" : "center"};
   }
 
   @media (max-width: 765px) {

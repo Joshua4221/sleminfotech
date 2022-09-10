@@ -1,5 +1,11 @@
 import Image from "next/image";
-import React, { useCallback, useEffect, useMemo, useState } from "react";
+import React, {
+  useCallback,
+  useEffect,
+  useMemo,
+  useState,
+  useRef,
+} from "react";
 import { HomeDiv } from "./home.style";
 import HeroImage from "../../Asset/main-banner.png";
 import { withTheme } from "styled-components";
@@ -11,51 +17,108 @@ import { parternsArrayIcon } from "../../Util/Home/partner";
 import { DeveloperArray } from "../../Util/Home/developer";
 import { dataArray, developedProject } from "../../Util/Home/solutions";
 import { TechnologyArray } from "../../Util/Home/technology";
+import { ClientProjectsArray } from "../../Util/Home/clientProject";
+import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 const HomePage = ({ theme, companyArray }) => {
   let lengthCount = TechnologyArray.length - 1;
   let newArr = TechnologyArray.slice(0, 12);
-  const [index, setIndex] = useState(0);
-  const [details, setDetails] = useState(developedProject[0]);
-  const [technologies, setTechnologies] = useState(newArr);
+  let lastArr = TechnologyArray.slice(12, TechnologyArray.length);
 
-  let autoScroll = false;
-  let slideIntervals;
-  let timeInterval = 5000;
+  const techArr = useMemo(() => [newArr, lastArr], [newArr, lastArr]);
+
+  // let newArr = TechnologyArray.slice(0, 12);
+  //   let lastArr = TechnologyArray.slice(12, TechnologyArray.length);
+
+  //   techArr = [newArr, lastArr];
+
+  if (
+    typeof window !== "undefined" &&
+    window.matchMedia("(max-width: 1024px)").matches
+  ) {
+    const arr1 = TechnologyArray.slice(0, 4);
+    const arr2 = TechnologyArray.slice(4, 8);
+    const arr3 = TechnologyArray.slice(8, 12);
+    const arr4 = TechnologyArray.slice(12, 16);
+    const arr5 = TechnologyArray.slice(16, 20);
+    const arr6 = TechnologyArray.slice(20, TechnologyArray.length);
+
+    techArr = [arr1, arr2, arr3, arr4, arr5, arr6];
+  }
+
+  const [index, setIndex] = useState(0);
+  const [techIndex, setTechIndex] = useState(0);
+
+  const [details, setDetails] = useState(developedProject[0]);
+  const [technologies, setTechnologies] = useState(techArr[0]);
+  const [clientIndex, setClientIndex] = useState(0);
+
+  const timeoutRef = useRef(null);
+  const timeoutRefTech = useRef(null);
+  // const timeoutRef = useRef(null);
+
+  let timeIntervals = 5000;
 
   const Slider = useCallback(() => {
-    setIndex(index === dataArray.length - 1 ? 0 : index + 1);
-    // setDetails(developedProject[index]);
-    // console.log(joshuaindex);
-  }, [index]);
+    setIndex((prevIndex) =>
+      prevIndex === dataArray.length - 1 ? 0 : prevIndex + 1
+    );
+  }, []);
+
+  const TechSlider = useCallback(() => {
+    setTechIndex((prevTech) =>
+      prevTech === techArr.length - 1 ? 0 : prevTech + 1
+    );
+    setTechnologies(techArr[techIndex]);
+  }, [techIndex, techArr]);
+
+  const ClientSlider = useCallback(() => {
+    setClientIndex((prevIndex) =>
+      prevIndex === ClientProjectsArray.length - 1 ? 0 : prevIndex + 1
+    );
+  }, []);
+
+  const ClentSliderReducer = useCallback(() => {
+    setClientIndex((prevIndex) =>
+      prevIndex === 0 ? ClientProjectsArray.length - 1 : prevIndex - 1
+    );
+  }, []);
 
   const SliderReducer = useCallback(() => {
-    setIndex(index === 0 ? dataArray.length - 1 : index - 1);
-    // setDetails(developedProject[index]);
-    // console.log(index);
+    setIndex((prevIndex) =>
+      prevIndex === 0 ? dataArray.length - 1 : prevIndex - 1
+    );
   }, [index]);
 
-  const auto = () => {
-    slideIntervals = setInterval(Slider, timeInterval);
+  const resetTimeout = () => {
+    if (timeoutRef.current) {
+      clearTimeout(timeoutRef.current);
+    }
   };
 
-  // useEffect(() => {
-  //   setIndex(0);
-  // }, [index]);
+  useEffect(() => {
+    resetTimeout();
+    timeoutRef.current = setTimeout(Slider, timeIntervals);
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     setIndex((prev) => (prev === dataArray.length - 1 ? 0 : prev + 1));
-  //     setDetails(developedProject[index]);
-  //   }, 10000);
-  //   console.log(index);
-  // }, [index]);
+    return () => {
+      resetTimeout();
+    };
+  }, [index]);
+
+  const resetTimeoutTech = () => {
+    if (timeoutRefTech.current) {
+      clearTimeout(timeoutRefTech.current);
+    }
+  };
 
   useEffect(() => {
-    if (autoScroll) {
-      auto();
-    }
-  }, [index]);
+    resetTimeoutTech();
+    timeoutRefTech.current = setTimeout(TechSlider, timeIntervals);
+
+    return () => {
+      resetTimeoutTech();
+    };
+  }, [techIndex]);
 
   return (
     <HomeDiv color={theme} Bg={Bg}>
@@ -168,6 +231,7 @@ const HomePage = ({ theme, companyArray }) => {
             {dataArray.map((item, key) => (
               <div
                 key={key}
+                onClick={() => setIndex(key)}
                 className={`data ${index === key && "dataColor"}`}
               ></div>
             ))}
@@ -223,13 +287,61 @@ const HomePage = ({ theme, companyArray }) => {
           />
           <div>
             <C_Cards ccardArray={technologies} details={"technology"} />
+            <div className="techControlerbody">
+              {techArr?.map((item, key) => (
+                <div
+                  onClick={() => {
+                    setTechIndex(key);
+                    setTechnologies(
+                      techArr[key === 0 ? techArr.length - 1 : key - 1]
+                    );
+                  }}
+                  className={`techControlerMain ${
+                    techIndex === key && "techControler"
+                  }`}
+                  key={key}
+                ></div>
+              ))}
+            </div>
           </div>
         </div>
-        <div>
-          {/* <HeadingSection title={"Last Project"} /> */}
-          <div>
-            <div></div>
-            <div></div>
+        <div className="clientProject">
+          <HeadingSection title={"Our Clients Projects"} />
+          <div className="clientProjectBody">
+            <div className="clientShowDirection">
+              <div
+                className="clientShowDirectionLeft"
+                onClick={ClentSliderReducer}
+              >
+                <FaAngleLeft className="clientShowDirectionLeftIcon" />
+              </div>
+              <div className="clientShowDirectionRight" onClick={ClientSlider}>
+                <FaAngleRight className="clientShowDirectionRightIcon" />
+              </div>
+            </div>
+            {ClientProjectsArray?.map((item, key) => (
+              <div key={key}>
+                {clientIndex === key && (
+                  <div className="clientBody">
+                    <div className="clientText">
+                      <C_Cards
+                        ccardArray={item.CCardArray}
+                        projects="clientProject"
+                      />
+                    </div>
+                    <div className="clientImage">
+                      <Image
+                        src={item.image}
+                        alt=""
+                        placeholder="blur"
+                        priority
+                        blurDataURL
+                      />
+                    </div>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </div>

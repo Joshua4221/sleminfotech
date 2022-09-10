@@ -37,16 +37,25 @@ const Nav = ({ navArray, theme }) => {
             >
               {item.image ? (
                 <div className={`${item.classname}`}>
-                  <Image
-                    src={item.image}
-                    alt={""}
-                    placeholder="blur"
-                    blurDataURL
-                    priority
-                    objectFit="cover"
-                    layout="responsive"
-                    className={`${item.classitem}`}
-                  />
+                  <Link href={"/"}>
+                    <a>
+                      <div className={`${item.classitem}`}>
+                        <Image
+                          src={item.image}
+                          alt={""}
+                          placeholder="blur"
+                          blurDataURL
+                          priority
+                          objectFit="cover"
+                          layout="responsive"
+                          className={`${item.classitemimage}`}
+                        />
+                      </div>
+                      <div className={`${item.classitemtext}`}>
+                        <p>{item.imageText}</p>
+                      </div>
+                    </a>
+                  </Link>
                 </div>
               ) : item.icon ? (
                 <div className={`${item.classname}`}>

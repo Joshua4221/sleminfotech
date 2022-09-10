@@ -1,13 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { withTheme } from "styled-components";
-import ContactSect from "../contact_sect";
-import FormComponent from "../FormComponent";
+import Form from "../Form";
 import Modals from "../Modals";
 import { FooterDiv } from "./footer.style";
 
 const FooterComponent = ({ footerArray, theme }) => {
+  const [showModal, setShowModal] = useState(false);
+  const HandleModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <FooterDiv color={theme}>
       {footerArray.map((item, key) => (
@@ -23,15 +27,20 @@ const FooterComponent = ({ footerArray, theme }) => {
                 <div>
                   {item.image ? (
                     <div className={`${item.classname}`}>
-                      <Image
-                        src={item.image}
-                        alt={"logo"}
-                        // width={"100"}
-                        // height={"50"}
-                        placeholder="blur"
-                        priority
-                        blurDataURL
-                      />
+                      <div className={`${item.classnameimage}`}>
+                        <Image
+                          src={item.image}
+                          alt={"logo"}
+                          // width={"100"}
+                          // height={"50"}
+                          placeholder="blur"
+                          priority
+                          blurDataURL
+                        />
+                      </div>
+                      <div className={`${item.classnametext}`}>
+                        <p>{item.imageText}</p>
+                      </div>
                     </div>
                   ) : (
                     item.header && (
@@ -49,7 +58,11 @@ const FooterComponent = ({ footerArray, theme }) => {
                 <div>
                   {item.buttontext ? (
                     <div>
-                      <button className="button">
+                      <button
+                        className="button"
+                        onClick={HandleModal}
+                        style={{ cursor: "pointer" }}
+                      >
                         <div className="buttontext">
                           <p>{item.buttontext}</p>
                         </div>
@@ -59,7 +72,9 @@ const FooterComponent = ({ footerArray, theme }) => {
                           </div>
                         )}
                       </button>
-                      {/* <Modals ModalComponent={ContactSect} /> */}
+                      {showModal && (
+                        <Modals ModalComponent={Form} setValue={setShowModal} />
+                      )}
                     </div>
                   ) : item.linkarray ? (
                     <div className={`${item.classlinkbody}`}>

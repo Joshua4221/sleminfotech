@@ -1,9 +1,7 @@
-import ImageOne from "../../Asset/p5.png";
-import ImageTwo from "../../Asset/p6.png";
-import ImageThree from "../../Asset/p7.png";
-import Imagefour from "../../Asset/p8.png";
-import Imagefive from "../../Asset/p9.png";
-import Imagesix from "../../Asset/p10.png";
+import ImageOne from "../../Asset/jamavoice1.png";
+import ImageTwo from "../../Asset/poshtok.png";
+import ImageThree from "../../Asset/dtworld.png";
+import Imagefour from "../../Asset/easyhealth.jpg";
 import { FaArrowRight } from "react-icons/fa";
 
 export const HeroArray = [

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const DropDownDiv = styled.div`
   /* text-align: center; */
-  background-color: ${({ color }) => color.PrimColor};
+  background-color: ${({ color }) => color.SectionColor};
   position: absolute;
   left: ${({ details }) => details === "about" && "-20%"};
   display: ${({ details }) => (details === "about" ? "flex" : "block")};
@@ -10,7 +10,9 @@ export const DropDownDiv = styled.div`
   flex-wrap: ${({ details }) => details === "about" && "wrap"};
   width: ${({ details }) => details === "about" && "100%"};
   margin: 0px auto;
+  box-shadow: 0px 2px 8px 2px rgba(0, 0, 0, 0.193);
   padding: ${({ details }) => (details === "about" ? "40px 10px" : "10px")};
+  border-radius: 0px 0px 8px;
 
   .secondlayoutbodydropdownitem {
     padding: 10px 15px;
@@ -23,7 +25,7 @@ export const DropDownDiv = styled.div`
 
     .secondlayoutnamedropdownitem {
       p {
-        color: ${({ color }) => color.SecondaryColor};
+        color: ${({ color }) => color.PrimaryColor};
         font-weight: 700;
       }
     }
