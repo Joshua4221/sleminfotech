@@ -17,25 +17,12 @@ import { TechnologyArray } from "../../Util/Home/technology";
 import C_Cards from "../../Universal-Components/C_Cards";
 
 const CareerPage = ({ theme }) => {
-  let techArr;
-  if (
-    typeof window !== "undefined" &&
-    window.matchMedia("(max-width: 1024px)").matches
-  ) {
-    const arr1 = TechnologyArray.slice(0, 4);
-    const arr2 = TechnologyArray.slice(4, 8);
-    const arr3 = TechnologyArray.slice(8, 12);
-    const arr4 = TechnologyArray.slice(12, 16);
-    const arr5 = TechnologyArray.slice(16, 20);
-    const arr6 = TechnologyArray.slice(20, TechnologyArray.length);
+  const arr1 = TechnologyArray.slice(0, 6);
+  const arr2 = TechnologyArray.slice(6, 12);
+  const arr3 = TechnologyArray.slice(12, 18);
+  const arr4 = TechnologyArray.slice(18, TechnologyArray.length);
 
-    techArr = [arr1, arr2, arr3, arr4, arr5, arr6];
-  } else {
-    let newArr = TechnologyArray.slice(0, 12);
-    let lastArr = TechnologyArray.slice(12, TechnologyArray.length);
-
-    techArr = [newArr, lastArr];
-  }
+  const techArr = useMemo(() => [arr1, arr2, arr3, arr4], []);
 
   const [showModal, setShowModal] = useState(false);
   const [techIndex, setTechIndex] = useState(0);

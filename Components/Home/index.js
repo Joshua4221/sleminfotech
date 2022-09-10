@@ -21,30 +21,12 @@ import { ClientProjectsArray } from "../../Util/Home/clientProject";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 const HomePage = ({ theme, companyArray }) => {
-  let lengthCount = TechnologyArray.length - 1;
-  let newArr = TechnologyArray.slice(0, 12);
-  let lastArr = TechnologyArray.slice(12, TechnologyArray.length);
+  const arr1 = TechnologyArray.slice(0, 6);
+  const arr2 = TechnologyArray.slice(6, 12);
+  const arr3 = TechnologyArray.slice(12, 18);
+  const arr4 = TechnologyArray.slice(18, TechnologyArray.length);
 
-  const techArr = useMemo(() => [newArr, lastArr], [newArr, lastArr]);
-
-  // let newArr = TechnologyArray.slice(0, 12);
-  //   let lastArr = TechnologyArray.slice(12, TechnologyArray.length);
-
-  //   techArr = [newArr, lastArr];
-
-  if (
-    typeof window !== "undefined" &&
-    window.matchMedia("(max-width: 1024px)").matches
-  ) {
-    const arr1 = TechnologyArray.slice(0, 4);
-    const arr2 = TechnologyArray.slice(4, 8);
-    const arr3 = TechnologyArray.slice(8, 12);
-    const arr4 = TechnologyArray.slice(12, 16);
-    const arr5 = TechnologyArray.slice(16, 20);
-    const arr6 = TechnologyArray.slice(20, TechnologyArray.length);
-
-    techArr = [arr1, arr2, arr3, arr4, arr5, arr6];
-  }
+  const techArr = useMemo(() => [arr1, arr2, arr3, arr4], []);
 
   const [index, setIndex] = useState(0);
   const [techIndex, setTechIndex] = useState(0);
@@ -286,7 +268,9 @@ const HomePage = ({ theme, companyArray }) => {
             }
           />
           <div>
-            <C_Cards ccardArray={technologies} details={"technology"} />
+            <div className="techControlerItems">
+              <C_Cards ccardArray={technologies} details={"technology"} />
+            </div>
             <div className="techControlerbody">
               {techArr?.map((item, key) => (
                 <div
