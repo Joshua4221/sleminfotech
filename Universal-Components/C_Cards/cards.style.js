@@ -1,4 +1,55 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const top = keyframes`
+  from{top:-300px;opacity:0} to{top:0;opacity:1}
+`;
+
+const bottom = keyframes`
+  from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}
+`;
+const opac = keyframes`
+  from{opacity:0} to{opacity:1}
+`;
+
+const left = keyframes`
+  from{
+    left:-50px; 
+    opacity:0.5
+  } 
+  to{
+    left:0; 
+    opacity:1
+  }
+`;
+
+const right = keyframes`
+  from{
+    right:-50px; 
+    opacity:0
+  } 
+  to{
+    right:0; 
+    opacity:1
+  }
+`;
+
+const fade = keyframes`
+  0%{
+    opacity:0
+  }
+  100%{
+    opacity:1
+  }
+`;
+
+const zoom = keyframes`
+  from{
+    transform:scale(0)
+  } 
+  to{
+    transform:scale(1)
+  }
+`;
 
 export const CCardDiv = styled.div`
   margin: 20px 0px;

@@ -1,5 +1,16 @@
 import styled, { keyframes } from "styled-components";
 
+const top = keyframes`
+  from{top:-300px;opacity:0} to{top:0;opacity:1}
+`;
+
+const bottom = keyframes`
+  from{bottom:-300px;opacity:0} to{bottom:0;opacity:1}
+`;
+const opac = keyframes`
+  from{opacity:0} to{opacity:1}
+`;
+
 const left = keyframes`
   from{
     left:-50px; 
@@ -28,6 +39,15 @@ const fade = keyframes`
   }
   100%{
     opacity:1
+  }
+`;
+
+const zoom = keyframes`
+  from{
+    transform:scale(0)
+  } 
+  to{
+    transform:scale(1)
   }
 `;
 
@@ -279,6 +299,7 @@ export const HomeDiv = styled.div`
           display: flex;
           align-items: center;
           justify-content: space-between;
+          animation: ${fade} 2s ease-out;
 
           .developedProjectbodydataimage {
             width: 46%;
@@ -341,6 +362,10 @@ export const HomeDiv = styled.div`
 
     .technology {
       padding: 40px;
+
+      .techControlerItems {
+        animation: ${fade} 2s ease-out;
+      }
 
       .techControlerbody {
         display: flex;
@@ -421,6 +446,7 @@ export const HomeDiv = styled.div`
           display: flex;
           align-items: center;
           justify-content: space-between;
+          animation: ${zoom} 1s ease-out;
 
           .clientText {
             width: 48%;
