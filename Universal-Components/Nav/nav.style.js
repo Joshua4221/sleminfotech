@@ -16,7 +16,35 @@ export const NavDiv = styled.div`
     .firstlayoutbody {
       .firstlayoutname {
         cursor: pointer;
-        width: 65px;
+
+        a {
+          display: flex;
+          align-items: center;
+          padding: 0px 10px 0px 0px;
+
+          .firstlayoutitem {
+            width: 65px;
+          }
+
+          .firstlayoutitemtext {
+            p {
+              font-size: 28px;
+              font-weight: 900;
+              color: ${({ color }) => color.SectionColor};
+              font-family: "MuseoModerno", cursive;
+              word-spacing: -0.15rem;
+              letter-spacing: -0.12rem;
+
+              @media screen and (max-width: 428px) {
+                font-size: 18px;
+              }
+
+              @media screen and (max-width: 324px) {
+                font-size: 15px;
+              }
+            }
+          }
+        }
       }
     }
     @media screen and (max-width: 950px) {
@@ -39,7 +67,7 @@ export const NavDiv = styled.div`
           .secondlayoutitem {
             padding: 10px 15px;
             margin: 0px 10px;
-            color: ${({ color }) => color.SecondaryColor};
+            color: ${({ color }) => color.SectionColor};
             cursor: pointer;
 
             p {
@@ -50,8 +78,8 @@ export const NavDiv = styled.div`
 
           &:hover {
             .secondlayoutitem {
-              background-color: ${({ color }) => color.PrimColor};
-              color: ${({ color }) => color.SecondColor};
+              background-color: ${({ color }) => color.SectionColor};
+              color: ${({ color }) => color.PrimaryColor};
             }
           }
         }
@@ -80,7 +108,7 @@ export const NavDiv = styled.div`
         .secondlayoutitemdropdown {
           padding: 10px 15px;
           margin: 0px 10px;
-          color: ${({ color }) => color.SecondaryColor};
+          color: ${({ color }) => color.SectionColor};
           cursor: pointer;
 
           p {
@@ -89,8 +117,8 @@ export const NavDiv = styled.div`
           }
 
           &:hover {
-            background-color: ${({ color }) => color.PrimColor};
-            color: ${({ color }) => color.SecondColor};
+            background-color: ${({ color }) => color.SectionColor};
+            color: ${({ color }) => color.PrimaryColor};
           }
         }
 
@@ -133,18 +161,18 @@ export const NavDiv = styled.div`
         cursor: pointer;
 
         .thirdlayoutitem {
-          color: ${({ color }) => color.SecondaryColor};
+          color: ${({ color }) => color.SectionColor};
           font-size: 18px;
           font-weight: 800;
         }
       }
 
       &:hover {
-        background-color: ${({ color }) => color.PrimColor};
+        background-color: ${({ color }) => color.SectionColor};
 
         .thirdlayoutname {
           .thirdlayoutitem {
-            color: ${({ color }) => color.SecondColor};
+            color: ${({ color }) => color.PrimaryColor};
           }
         }
       }
@@ -175,8 +203,8 @@ export const NavDiv = styled.div`
       flex-direction: column;
       align-items: flex-start;
       position: absolute;
-      top: 2.4rem;
-      background-color: ${({ color }) => color.PrimColor};
+      top: 4rem;
+      background-color: ${({ color }) => color.SectionColor};
     }
   }
 
@@ -194,17 +222,17 @@ export const NavDiv = styled.div`
         justify-content: center;
 
         .thirdlayoutitem {
-          color: ${({ color }) => color.SecondaryColor};
+          color: ${({ color }) => color.SectionColor};
           font-size: 24px;
           font-weight: 900;
         }
       }
 
       &:hover {
-        background-color: ${({ color }) => color.PrimColor};
+        background-color: ${({ color }) => color.SectionColor};
         .thirdlayoutname {
           .thirdlayoutitem {
-            color: ${({ color }) => color.SecondColor};
+            color: ${({ color }) => color.PrimaryColor};
           }
         }
       }

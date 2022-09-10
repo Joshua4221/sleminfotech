@@ -8,9 +8,19 @@ export const StyledContactSect = styled.div`
   padding: 10rem;
   color: ${ColorLightMode.PrimColor};
   background-color: ${ColorLightMode.SectionColor};
-  @media screen and (max-width: 600px) {
+
+  @media screen and (max-width: 1115px) {
     padding: 2rem 1rem;
   }
+
+  @media screen and (max-width: 900px) {
+    padding: 2rem 1rem;
+  }
+
+  @media screen and (max-width: 827px) {
+    flex-direction: column;
+  }
+
   .text {
     h1 {
       font-size: 46px;
@@ -21,6 +31,10 @@ export const StyledContactSect = styled.div`
       font-weight: 900;
       font-size: 20px;
       width: 60%;
+    }
+
+    @media screen and (max-width: 827px) {
+      width: 100%;
     }
   }
 `;

@@ -47,5 +47,13 @@ export const ITConsultingCardDiv = styled.div`
         }
       }
     }
+
+    @media screen and (max-width: 1000px) {
+      width: 48%;
+    }
+
+    @media screen and (max-width: 600px) {
+      width: 100%;
+    }
   }
 `;

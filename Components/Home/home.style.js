@@ -368,8 +368,55 @@ export const HomeDiv = styled.div`
 
     .clientProject {
       padding: 40px;
+      // position: relative;
 
       .clientProjectBody {
+        position: relative;
+
+        &:hover {
+          .clientShowDirection {
+            display: flex;
+          }
+        }
+
+        .clientShowDirection {
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          z-index: 10;
+          display: none;
+          justify-content: space-between;
+          align-items: center;
+
+          @media screen and (max-width: 720px) {
+            display: flex;
+          }
+
+          .clientShowDirectionLeft {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border: 3px solid ${({ color }) => color.GoldColor};
+
+            .clientShowDirectionLeftIcon {
+              color: ${({ color }) => color.GoldColor};
+              font-size: 32px;
+            }
+          }
+
+          .clientShowDirectionRight {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            border: 3px solid ${({ color }) => color.GoldColor};
+
+            .clientShowDirectionRightIcon {
+              color: ${({ color }) => color.GoldColor};
+              font-size: 32px;
+            }
+          }
+        }
+
         .clientBody {
           display: flex;
           align-items: center;
@@ -377,15 +424,28 @@ export const HomeDiv = styled.div`
 
           .clientText {
             width: 48%;
+
+            @media screen and (max-width: 950px) {
+              width: 100%;
+            }
           }
 
           .clientImage {
             width: 45%;
+
+            @media screen and (max-width: 950px) {
+              width: 100%;
+            }
+          }
+
+          @media screen and (max-width: 950px) {
+            flex-direction: column;
+            justify-content: flex-start;
           }
         }
       }
 
-      @media (max-width: 500px) {
+      @media (max-width: 950px) {
         padding: 40px 10px;
       }
     }

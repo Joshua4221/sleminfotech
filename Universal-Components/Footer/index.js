@@ -27,15 +27,20 @@ const FooterComponent = ({ footerArray, theme }) => {
                 <div>
                   {item.image ? (
                     <div className={`${item.classname}`}>
-                      <Image
-                        src={item.image}
-                        alt={"logo"}
-                        // width={"100"}
-                        // height={"50"}
-                        placeholder="blur"
-                        priority
-                        blurDataURL
-                      />
+                      <div className={`${item.classnameimage}`}>
+                        <Image
+                          src={item.image}
+                          alt={"logo"}
+                          // width={"100"}
+                          // height={"50"}
+                          placeholder="blur"
+                          priority
+                          blurDataURL
+                        />
+                      </div>
+                      <div className={`${item.classnametext}`}>
+                        <p>{item.imageText}</p>
+                      </div>
                     </div>
                   ) : (
                     item.header && (

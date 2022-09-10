@@ -20,16 +20,21 @@ export const HeroSubSectionDiv = styled.div`
         color: ${({ color }) => color.PrimaryColor};
         font-size: 64px;
         font-weight: 900;
+
+        @media screen and (max-width: 500px) {
+          font-size: 42px;
+        }
       }
     }
 
     .herobuttonarray {
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
       margin: 20px 0px;
 
       .herobuttonbody {
-        margin-right: 30px;
+        margin: 20px 30px 0px 0px;
         button {
           cursor: pointer;
           border: 1px solid ${({ color }) => color.PrimaryColor};
@@ -38,6 +43,10 @@ export const HeroSubSectionDiv = styled.div`
           padding: 10px 12px;
           border-radius: 15px;
           color: ${({ color }) => color.PrimaryColor};
+        }
+
+        @media screen and (max-width: 500px) {
+          margin: 20px 10px 0px 0px;
         }
       }
     }
@@ -50,6 +59,15 @@ export const HeroSubSectionDiv = styled.div`
         font-weight: 600;
         color: ${({ color }) => color.PrimaryColor};
       }
+
+      @media screen and (max-width: 800px) {
+        width: 90%;
+      }
     }
+  }
+
+  @media screen and (max-width: 720px) {
+    height: unset;
+    padding-top: 80px;
   }
 `;

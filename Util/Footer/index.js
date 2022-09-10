@@ -11,10 +11,13 @@ export const FooterArray = [
     section: [
       {
         image: Image,
+        imageText: "SALEM INFO TECH",
         text: "No. 4 Efab City Estate Life-Camp Abuja FCT, Nigeria.",
         classbody: "firstClassbody",
         classname: "firstClassname",
         classitem: "firstClassitem",
+        classnameimage: "firstClassnameimage",
+        classnametext: "firstClassnametext",
         linkarray: [
           {
             linkIcon: BsTwitter,

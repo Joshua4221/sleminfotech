@@ -7,6 +7,7 @@ export const FormDiv = styled.div`
 
   .box {
     /* background-color: orange; */
+
     @media screen and (max-width: 600px) {
       width: 90%;
     }
@@ -28,6 +29,11 @@ export const FormDiv = styled.div`
     label {
       color: white;
     }
+  }
+
+  @media screen and (max-width: 827px) {
+    width: 100%;
+    margin: 1rem 0;
   }
 
   @media screen and (max-width: 600px) {

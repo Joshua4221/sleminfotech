@@ -15,8 +15,24 @@ export const FooterDiv = styled.div`
       padding: 0px 11px;
 
       .firstClassname {
-        padding: 5px 0px;
-        width: 70px;
+        display: flex;
+        align-items: center;
+        padding: 0px 5px 0px 0px;
+
+        .firstClassnameimage {
+          width: 70px;
+        }
+
+        .firstClassnametext {
+          p {
+            font-size: 28px;
+            font-weight: 900;
+            color: ${({ color }) => color.PrimaryColor};
+            font-family: "MuseoModerno", cursive;
+            word-spacing: -0.15rem;
+            letter-spacing: -0.12rem;
+          }
+        }
       }
 
       .firstClassitem {

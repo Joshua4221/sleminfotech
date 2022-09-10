@@ -64,10 +64,31 @@ export const ITConstulationDiv = styled.div`
           }
         }
       }
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
     }
 
     .it-hero-image {
       width: 40%;
+
+      @media screen and (max-width: 900px) {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 1060px) {
+      padding-top: 80px;
+    }
+
+    @media screen and (max-width: 990px) {
+      padding-top: 80px;
+      height: unset;
+    }
+
+    @media screen and (max-width: 900px) {
+      flex-direction: column;
     }
   }
 

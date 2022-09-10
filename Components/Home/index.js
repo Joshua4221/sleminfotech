@@ -74,15 +74,15 @@ const HomePage = ({ theme, companyArray }) => {
 
   const ClientSlider = useCallback(() => {
     setClientIndex((prevIndex) =>
-      prevIndex === dataArray.length - 1 ? 0 : prevIndex + 1
+      prevIndex === ClientProjectsArray.length - 1 ? 0 : prevIndex + 1
     );
   }, []);
 
   const ClentSliderReducer = useCallback(() => {
     setClientIndex((prevIndex) =>
-      prevIndex === 0 ? dataArray.length - 1 : prevIndex - 1
+      prevIndex === 0 ? ClientProjectsArray.length - 1 : prevIndex - 1
     );
-  }, [index]);
+  }, []);
 
   const SliderReducer = useCallback(() => {
     setIndex((prevIndex) =>
@@ -308,11 +308,16 @@ const HomePage = ({ theme, companyArray }) => {
         <div className="clientProject">
           <HeadingSection title={"Our Clients Projects"} />
           <div className="clientProjectBody">
-            <div>
-              <div>
-                <FaAngleLeft />
+            <div className="clientShowDirection">
+              <div
+                className="clientShowDirectionLeft"
+                onClick={ClentSliderReducer}
+              >
+                <FaAngleLeft className="clientShowDirectionLeftIcon" />
               </div>
-              <div></div>
+              <div className="clientShowDirectionRight" onClick={ClientSlider}>
+                <FaAngleRight className="clientShowDirectionRightIcon" />
+              </div>
             </div>
             {ClientProjectsArray?.map((item, key) => (
               <div key={key}>
@@ -321,7 +326,7 @@ const HomePage = ({ theme, companyArray }) => {
                     <div className="clientText">
                       <C_Cards
                         ccardArray={item.CCardArray}
-                        projects="project"
+                        projects="clientProject"
                       />
                     </div>
                     <div className="clientImage">
