@@ -1,5 +1,7 @@
 import React from "react";
 import { FaBeer } from "react-icons/fa";
+import IconBG from "../../Asset/case-bg-3.png";
+import IconBGT from "../../Asset/bg-light.png";
 import {
   ImageTextHolder,
   StyledNumText,
@@ -122,7 +124,7 @@ export const SideBySideText = ({ textHolder, BGColor, TextColor }) => {
 export const IconText = ({ title, text, Icon, classL }) => {
   return (
     <StyledIconDiv className={classL}>
-      <div className="cliped">
+      <div className="cliped" bG={IconBGT.src}>
         <h3>{Icon}</h3>
       </div>
       <h1>{title}</h1>

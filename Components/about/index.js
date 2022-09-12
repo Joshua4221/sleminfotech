@@ -1,6 +1,8 @@
 import React from "react";
-import { FiGlobe } from "react-icons/fi";
-
+import { FiGlobe, FiClock } from "react-icons/fi";
+import { FaWallet } from "react-icons/fa";
+import { TiWaves } from "react-icons/ti";
+import { BsPeopleFill } from "react-icons/bs";
 import {
   ImageTextContainer,
   NumberText,
@@ -38,51 +40,51 @@ const AboutComp = () => {
         <div className="iconContainer">
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Here in 24hrs"}
             text={
               "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+            }
+            Icon={<FiClock />}
+          />
+          <IconText
+            classL="iconText"
+            title={"Cost-effective"}
+            text={
+              "Plavno reduces acquisition costs by 30-50% and cost of labour by 35-60%."
+            }
+            Icon={<FaWallet />}
+          />
+          <IconText
+            classL="iconText"
+            title={"Flexible scaling"}
+            text={
+              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+            }
+            Icon={<TiWaves />}
+          />
+          <IconText
+            classL="iconText"
+            title={"Flexible scaling"}
+            text={
+              "Plavno provides various solutions to cater to the different needs of our clients. Our goal is to help you scale quickly and affordably."
             }
             Icon={<FiGlobe />}
           />
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Timezone Aligned"}
             text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+              "Geographical location enables teams to work in real-time, allowing for efficiency and ease of integration into companies teams."
             }
             Icon={<FiGlobe />}
           />
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Mitigate the risk in hiring"}
             text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
+              "All IT Experts are employed by Plavno and become a part of your team."
             }
-            Icon={<FiGlobe />}
-          />
-          <IconText
-            classL="iconText"
-            title={"header"}
-            text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
-            }
-            Icon={<FiGlobe />}
-          />
-          <IconText
-            classL="iconText"
-            title={"header"}
-            text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
-            }
-            Icon={<FiGlobe />}
-          />
-          <IconText
-            classL="iconText"
-            title={"header"}
-            text={
-              "At Plavno we introduce you to our Senior IT Experts within 24hrs."
-            }
-            Icon={<FiGlobe />}
+            Icon={<BsPeopleFill />}
           />
         </div>
       </div>
