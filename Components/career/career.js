@@ -17,12 +17,14 @@ import { TechnologyArray } from "../../Util/Home/technology";
 import C_Cards from "../../Universal-Components/C_Cards";
 
 const CareerPage = ({ theme }) => {
-  const arr1 = TechnologyArray.slice(0, 6);
-  const arr2 = TechnologyArray.slice(6, 12);
-  const arr3 = TechnologyArray.slice(12, 18);
-  const arr4 = TechnologyArray.slice(18, TechnologyArray.length);
+  const arr1 = TechnologyArray.slice(0, 4);
+  const arr2 = TechnologyArray.slice(4, 8);
+  const arr3 = TechnologyArray.slice(8, 12);
+  const arr4 = TechnologyArray.slice(12, 16);
+  const arr5 = TechnologyArray.slice(16, 20);
+  const arr6 = TechnologyArray.slice(20, TechnologyArray.length);
 
-  const techArr = useMemo(() => [arr1, arr2, arr3, arr4], []);
+  const techArr = useMemo(() => [arr1, arr2, arr3, arr4, arr5, arr6], []);
 
   const [showModal, setShowModal] = useState(false);
   const [techIndex, setTechIndex] = useState(0);
@@ -134,8 +136,8 @@ const CareerPage = ({ theme }) => {
         <div className={"ServiceConnect"}>
           <h2>{`Become a part of our professional team we need`}</h2>
           <p className={"ServiceContent"}>
-            Start working with Techwind that can provide everything you need to
-            generate awareness, drive traffic, connect.
+            Start working with Slem Info Tech that can provide everything you
+            need to generate awareness, drive traffic, connect.
           </p>
           <button className={"ServiceLink"}>
             <div className={"ServiceLinkBody"}>

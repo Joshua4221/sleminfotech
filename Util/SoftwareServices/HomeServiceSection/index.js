@@ -10,31 +10,31 @@ export const HomeServiceSectionArray = [
   {
     icon: FaLaptopCode,
     header: "Web Development",
-    paragraph: `Holisticly morph distinctive methodologies and vertical e-tailers. Rapidiously grow customized data.`,
+    paragraph: `We give global brands design and build superior digital websites, user experiences across all platforms and devices.`,
   },
   {
     icon: BsFillPhoneFill,
     header: "App Development",
-    paragraph: `Holisticly morph distinctive methodologies and vertical e-tailers. Rapidiously grow customized data.`,
+    paragraph: `We help organizations become a lasting success in the global arena by building solutions of different complexity.`,
   },
   {
     icon: HiShieldCheck,
     header: "Data Security",
-    paragraph: `Holisticly morph distinctive methodologies and vertical e-tailers. Rapidiously grow customized data.`,
+    paragraph: `Slem InfoTech security professionals will help you identify technology solutions that meet your organization’s needs.`,
   },
   {
     icon: FiPenTool,
     header: "UI/UX Design",
-    paragraph: `Holisticly morph distinctive methodologies and vertical e-tailers. Rapidiously grow customized data.`,
+    paragraph: `Build your products with a team that establishes a clear design process, meets deadlines. `,
   },
   {
     icon: SiMaterialdesign,
     header: "Graphics Design",
-    paragraph: `Holisticly morph distinctive methodologies and vertical e-tailers. Rapidiously grow customized data.`,
+    paragraph: `Our Graphic design services cover products – brochures, business cards, publications, mailers, posters and billboards.`,
   },
   {
     icon: TbSpeakerphone,
     header: "Digital Marketing",
-    paragraph: `Holisticly morph distinctive methodologies and vertical e-tailers. Rapidiously grow customized data.`,
+    paragraph: `Our marketing expertise is sought by companies in technology, travel agencies, entertainments, real estate and retail, etc.`,
   },
 ];

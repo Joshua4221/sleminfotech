@@ -9,7 +9,7 @@ export const NavArray = [
     section: [
       {
         image: Logo,
-        imageText: "SALEM INFO TECH",
+        imageText: "SLEM INFO TECH",
         classbody: "firstlayoutbody",
         classname: "firstlayoutname",
         classitem: "firstlayoutitem",
@@ -23,7 +23,7 @@ export const NavArray = [
     section: [
       {
         dropdown: "COMPANY",
-        details: "service",
+        details: "company",
         classbody: "secondlayoutbodydropdown",
         classname: "secondlayoutnamedropdown",
         classitem: "secondlayoutitemdropdown",

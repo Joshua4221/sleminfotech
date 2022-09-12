@@ -11,6 +11,7 @@ export const ClientProjectsArray = [
         header: "EasyHealth",
         paragraph:
           "EasyHealth is an e-Health project, that has a purpose of connecting patients and doctors and therefore taking their communications online.",
+        link: "/case",
         linkText: "Discover the Project",
         linkIcon: FaArrowRight,
       },
@@ -24,6 +25,7 @@ export const ClientProjectsArray = [
         header: "JAMA VOICE",
         paragraph:
           "Jamavoice online platform Instantly convert any text to real human voiceover that does not sound like computer voice.",
+        link: "/case",
         linkText: "Discover the Project",
         linkIcon: FaArrowRight,
       },
@@ -37,6 +39,7 @@ export const ClientProjectsArray = [
         header: "Dtworld",
         paragraph:
           "Online Staff Management System App development for private Company staff management.",
+        link: "/case",
         linkText: "Discover the Project",
         linkIcon: FaArrowRight,
       },
@@ -50,6 +53,7 @@ export const ClientProjectsArray = [
         header: "PoshTok Chat Application",
         paragraph:
           "PoshTok Chat App built for short form of videos and messaging.",
+        link: "/case",
         linkText: "Discover the Project",
         linkIcon: FaArrowRight,
       },

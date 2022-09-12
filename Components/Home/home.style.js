@@ -169,7 +169,7 @@ export const HomeDiv = styled.div`
 
     .partners {
       padding: 40px;
-      background-color: ${({ color }) => color.MajorColor};
+      background-color: ${({ color }) => color.SectionColor};
 
       .partnersbody {
         display: flex;
@@ -255,7 +255,7 @@ export const HomeDiv = styled.div`
         }
 
         .dataColor {
-          background-color: ${({ color }) => color.FooterTextColor};
+          background-color: ${({ color }) => color.SectionColor};
         }
       }
 
@@ -382,7 +382,7 @@ export const HomeDiv = styled.div`
         }
 
         .techControler {
-          background-color: ${({ color }) => color.FooterTextColor};
+          background-color: ${({ color }) => color.SectionColor};
         }
       }
 

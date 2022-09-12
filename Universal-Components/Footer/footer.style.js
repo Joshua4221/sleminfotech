@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterDiv = styled.div`
-  background-color: ${({ color }) => color.MajorColor};
+  background-color: ${({ color }) => color.SecondaryColor};
 
   .firstlayoutname {
     display: flex;
@@ -29,7 +29,7 @@ export const FooterDiv = styled.div`
             font-weight: 900;
             color: ${({ color }) => color.PrimaryColor};
             font-family: "MuseoModerno", cursive;
-            word-spacing: -0.15rem;
+            word-spacing: 0.1rem;
             letter-spacing: -0.12rem;
           }
         }

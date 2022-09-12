@@ -11,7 +11,7 @@ export const FooterArray = [
     section: [
       {
         image: Image,
-        imageText: "SALEM INFO TECH",
+        imageText: "SLEM INFO TECH",
         text: "No. 4 Efab City Estate Life-Camp Abuja FCT, Nigeria.",
         classbody: "firstClassbody",
         classname: "firstClassname",
@@ -58,7 +58,7 @@ export const FooterArray = [
         linkarray: [
           {
             linkIcon: FiChevronRight,
-            link: "",
+            link: "/case",
             linkText: "Cases",
             classbody: "linkbodyText",
             classname: "linkclassText",
@@ -68,7 +68,7 @@ export const FooterArray = [
           },
           {
             linkIcon: FiChevronRight,
-            link: "",
+            link: "/about",
             linkText: "About us",
             classbody: "linkbodyText",
             classname: "linkclassText",
@@ -78,7 +78,7 @@ export const FooterArray = [
           },
           {
             linkIcon: FiChevronRight,
-            link: "",
+            link: "/contact",
             linkText: "Contact",
             classbody: "linkbodyText",
             classname: "linkclassText",
@@ -86,16 +86,16 @@ export const FooterArray = [
             classicon: "iconlink",
             classitem: "linktextText",
           },
-          {
-            linkIcon: FiChevronRight,
-            link: "",
-            linkText: "Term",
-            classbody: "linkbodyText",
-            classname: "linkclassText",
-            classlinkicon: "linkiconText",
-            classicon: "iconlink",
-            classitem: "linktextText",
-          },
+          // {
+          //   linkIcon: FiChevronRight,
+          //   link: "",
+          //   linkText: "Term",
+          //   classbody: "linkbodyText",
+          //   classname: "linkclassText",
+          //   classlinkicon: "linkiconText",
+          //   classicon: "iconlink",
+          //   classitem: "linktextText",
+          // },
         ],
       },
       {
@@ -106,7 +106,7 @@ export const FooterArray = [
         linkarray: [
           {
             linkIcon: FiChevronRight,
-            link: "",
+            link: "/services/itconsultation",
             linkText: "IT Consultation",
             classbody: "linkbodyText",
             classname: "linkclassText",
@@ -116,7 +116,7 @@ export const FooterArray = [
           },
           {
             linkIcon: FiChevronRight,
-            link: "",
+            link: "/services/outstaffing",
             linkText: "OutStaffing",
             classbody: "linkbodyText",
             classname: "linkclassText",
@@ -126,7 +126,7 @@ export const FooterArray = [
           },
           {
             linkIcon: FiChevronRight,
-            link: "",
+            link: "/services/outsourcing",
             linkText: "OutSourcing",
             classbody: "linkbodyText",
             classname: "linkclassText",
@@ -136,7 +136,7 @@ export const FooterArray = [
           },
           {
             linkIcon: FiChevronRight,
-            link: "",
+            link: "/services/softwareservices",
             linkText: "Software Service",
             classbody: "linkbodyText",
             classname: "linkclassText",
