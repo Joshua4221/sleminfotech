@@ -36,7 +36,7 @@ const CCards = ({ ccardArray, theme, about, details, projects, service }) => {
             <p>{item.paragraph}</p>
             {item.linkText && (
               <div className={"ccardLink"}>
-                <Link href={""}>
+                <Link href={`${item.link}`}>
                   <a>
                     <div className={"ccardLinkBody"}>
                       <h3>{item.linkText}</h3>

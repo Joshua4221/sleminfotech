@@ -24,11 +24,11 @@ export const caseArr = [
     ccardArray: [
       {
         header: "JamaVoice",
-        subHeader: "Mobile    Web",
+        // subHeader: "Mobile    Web",
         paragraph:
           "Jamavoice online platform Instantly convert any text to real human voiceover that does not sound like computer voice.You will be surprised discover this Real Human Text to Speech Converter.",
-        linkText: "Discover the project",
-        linkIcon: FaArrowRight,
+        // linkText: "Discover the project",
+        // linkIcon: FaArrowRight,
       },
     ],
     image: ImageOne,
@@ -37,11 +37,11 @@ export const caseArr = [
     ccardArray: [
       {
         header: "Poshtok Chat Application",
-        subHeader: "Education   e-Commerce",
+        // subHeader: "Education   e-Commerce",
         paragraph:
           "App built for creating short form of mobile videos and messaging and entertainments.",
-        linkText: "Discover the project",
-        linkIcon: FaArrowRight,
+        // linkText: "Discover the project",
+        // linkIcon: FaArrowRight,
       },
     ],
     image: ImageTwo,
@@ -51,11 +51,11 @@ export const caseArr = [
     ccardArray: [
       {
         header: "Dt World",
-        subHeader: "Education   e-Commerce",
+        // subHeader: "Education   e-Commerce",
         paragraph:
           "Online Staff Management System App developed for private Company staff management.",
-        linkText: "Discover the project",
-        linkIcon: FaArrowRight,
+        // linkText: "Discover the project",
+        // linkIcon: FaArrowRight,
       },
     ],
   },
@@ -63,11 +63,11 @@ export const caseArr = [
     ccardArray: [
       {
         header: "EasyHealth",
-        subHeader: "Education   e-Commerce",
+        // subHeader: "Education   e-Commerce",
         paragraph:
           "EasyHealth is an e-Health project, that has a purpose of connecting patients and doctors and therefore taking their communications online.",
-        inkText: "Discover the project",
-        linkIcon: FaArrowRight,
+        // inkText: "Discover the project",
+        // linkIcon: FaArrowRight,
       },
     ],
     image: Imagefour,

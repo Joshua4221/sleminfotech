@@ -32,7 +32,7 @@ export const NavDiv = styled.div`
               font-weight: 900;
               color: ${({ color }) => color.SectionColor};
               font-family: "MuseoModerno", cursive;
-              word-spacing: -0.15rem;
+              word-spacing: 0.1rem;
               letter-spacing: -0.12rem;
 
               @media screen and (max-width: 428px) {

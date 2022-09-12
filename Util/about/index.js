@@ -1,16 +1,16 @@
-import ImageOne from "../../Asset/_1.png";
+import ImageOne from "../../Asset/IMG-20220829-WA0016.jpg";
 export const aboutImageTextArr = [
   {
     image: ImageOne,
-    title: "We are Salem Info Tech",
+    title: "We are Slem Info Tech",
     multiContent: [
       {
         txtContent:
-          "Salem Info Tech is a 13 years’ experience company who delivers elegant web and mobile solutions and provides a variety of options to help you scale your business.",
+          "Slem Info Tech is a 5 years’ experience company who delivers elegant web and mobile solutions and provides a variety of options to help you scale your business.",
       },
       {
         txtContent:
-          "Through Outstaffing and Outsourcing services, Salem Info Tech solves this problem and provides cost-effective and simple solutions for companies to increase their development teams with our remote Tech Experts or to create remote development teams to work on projects. Our Tech Experts and teams become your Experts and teams.",
+          "Through Outstaffing and Outsourcing services, Slem Info Tech solves this problem and provides cost-effective and simple solutions for companies to increase their development teams with our Tech Experts or to create remote development teams to work on projects.",
       },
     ],
   },
@@ -29,7 +29,7 @@ export const whatWeDoArr = [
     indexMultiContent: [
       {
         indexTxtContent:
-          "Salem Info Tech supplies you with Tech Experts to join your development team on a remote basis. They will work under your supervision on all projects you delegate to them.",
+          "Slem Info Tech supplies you with Tech Experts to join your development team on a remote basis. They will work under your supervision on all projects you delegate to them.",
       },
       {
         indexTxtContent: "Our team will become your team.",

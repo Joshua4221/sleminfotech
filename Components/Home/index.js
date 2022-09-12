@@ -21,12 +21,14 @@ import { ClientProjectsArray } from "../../Util/Home/clientProject";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
 
 const HomePage = ({ theme, companyArray }) => {
-  const arr1 = TechnologyArray.slice(0, 6);
-  const arr2 = TechnologyArray.slice(6, 12);
-  const arr3 = TechnologyArray.slice(12, 18);
-  const arr4 = TechnologyArray.slice(18, TechnologyArray.length);
+  const arr1 = TechnologyArray.slice(0, 4);
+  const arr2 = TechnologyArray.slice(4, 8);
+  const arr3 = TechnologyArray.slice(8, 12);
+  const arr4 = TechnologyArray.slice(12, 16);
+  const arr5 = TechnologyArray.slice(16, 20);
+  const arr6 = TechnologyArray.slice(20, TechnologyArray.length);
 
-  const techArr = useMemo(() => [arr1, arr2, arr3, arr4], []);
+  const techArr = useMemo(() => [arr1, arr2, arr3, arr4, arr5, arr6], []);
 
   const [index, setIndex] = useState(0);
   const [techIndex, setTechIndex] = useState(0);
@@ -174,8 +176,7 @@ const HomePage = ({ theme, companyArray }) => {
           <div className={"partnersbody"}>
             <div className={"partnersbodyOne"}>
               <p>
-                Together with our partners, we shape the future of digital
-                World.
+                Together with our partner, we shape the future of digital World.
               </p>
             </div>
             <div className={"partnersbodyTwo"}>
@@ -206,7 +207,7 @@ const HomePage = ({ theme, companyArray }) => {
         <div className={"websolution"}>
           <HeadingSection
             subtitle={
-              "High-quality Software solutions that are crucial for Business innovation"
+              "Our Software solutions that are crucial for Your Business."
             }
           />
           <div className={"webSolutionIncreament"}>
@@ -264,7 +265,7 @@ const HomePage = ({ theme, companyArray }) => {
           <HeadingSection
             title={"Technologies"}
             paragraph={
-              "Salem Info Tech provides you with motivated and experienced remote Tech Experts. With our business model, you have options to choose the solution that best fits your need."
+              "Slem Info Tech provides you with motivated and experienced remote Tech Experts. With our business model, you have options to choose the solution that best fits your need."
             }
           />
           <div>
