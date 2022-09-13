@@ -139,7 +139,7 @@ const CareerPage = ({ theme }) => {
             Start working with Slem InfoTech that can provide everything you
             need to generate awareness, drive traffic, connect.
           </p>
-          <button className={"ServiceLink"}>
+          <button onClick={HandleModal} className={"ServiceLink"}>
             <div className={"ServiceLinkBody"}>
               <div className={"ServiceLinkText"}>
                 <p>Contact Us</p>
@@ -147,6 +147,7 @@ const CareerPage = ({ theme }) => {
             </div>
           </button>
         </div>
+        {showModal && <Modals ModalComponent={Form} setValue={setShowModal} />}
       </div>
     </CareerDiv>
   );
