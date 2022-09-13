@@ -14,9 +14,8 @@ const ContactPageComp = () => {
       <div className="contact-info">
         <p className="contact-info-p">
           No matter if you come to us with a ready project, idea, or only with
-          doubts to dispel,Slem Info Tech are always happy to help and we are
-          not afraid of even the craziest questions and proposals. Just contact
-          us!
+          doubts to dispel,Slem InfoTech are always happy to help and we are not
+          afraid of even the craziest questions and proposals. Just contact us!
         </p>
         <div className="line-through"></div>
         <div className="contact-address">

@@ -179,6 +179,6 @@ export const FooterArray = [
   {
     classmain: "secondlayout",
     classname: "secondlayoutname",
-    text: "Salem Info Tech © 2022.| All Rights Reserved.",
+    text: "Salem InfoTech © 2022.| All Rights Reserved.",
   },
 ];

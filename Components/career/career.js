@@ -136,7 +136,7 @@ const CareerPage = ({ theme }) => {
         <div className={"ServiceConnect"}>
           <h2>{`Become a part of our professional team we need`}</h2>
           <p className={"ServiceContent"}>
-            Start working with Slem Info Tech that can provide everything you
+            Start working with Slem InfoTech that can provide everything you
             need to generate awareness, drive traffic, connect.
           </p>
           <button className={"ServiceLink"}>

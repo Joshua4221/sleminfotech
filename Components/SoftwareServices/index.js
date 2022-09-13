@@ -32,7 +32,7 @@ const SoftwareServicesPage = ({ theme }) => {
         <div className={"ServiceConnect"}>
           <h2>{`Do you have digital project? Let's talk.`}</h2>
           <p className={"ServiceContent"}>
-            Start working with Slem Info Tech that can provide everything you
+            Start working with Slem InfoTech that can provide everything you
             need to generate awareness, drive traffic, connect.
           </p>
           <button onClick={HandleModal} className={"ServiceLink"}>
