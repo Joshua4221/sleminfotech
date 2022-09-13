@@ -204,6 +204,7 @@ export const HomeDiv = styled.div`
         .partnersbodyTwo {
           width: 48%;
           display: flex;
+          justify-content: center;
           flex-wrap: wrap;
 
           .partnersbodyTwoIcon {
