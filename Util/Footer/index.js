@@ -21,21 +21,21 @@ export const FooterArray = [
         linkarray: [
           {
             linkIcon: BsTwitter,
-            link: "www.twitter.com/sleminfotech",
+            link: "https://twitter.com/sleminfotech",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
           },
           {
             linkIcon: BsInstagram,
-            link: "www.instagram.com/sleminfotech",
+            link: "https://www.instagram.com/sleminfotech/",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
           },
           {
             linkIcon: FaFacebookF,
-            link: "www.facebook.com/sleminfotech",
+            link: `https://web.facebook.com/Sleminfotech/`,
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
