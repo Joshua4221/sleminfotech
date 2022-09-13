@@ -275,7 +275,7 @@ const HomePage = ({ theme, companyArray }) => {
           <HeadingSection
             title={"Technologies"}
             paragraph={
-              "Slem Info Tech provides you with motivated and experienced remote Tech Experts. With our business model, you have options to choose the solution that best fits your need."
+              "Slem InfoTech provides you with motivated and experienced remote Tech Experts. With our business model, you have options to choose the solution that best fits your need."
             }
           />
           <div>

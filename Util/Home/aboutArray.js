@@ -3,7 +3,7 @@ import { FaArrowRight } from "react-icons/fa";
 export const AboutArray = [
   {
     header: "Outstaffing",
-    paragraph: `Slem Info Tech  provides you with highly skilled remote Tech Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result.`,
+    paragraph: `Slem InfoTech  provides you with highly skilled remote Tech Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result.`,
     link: "/services/outstaffing",
     linkText: "Know More About Us",
     linkIcon: FaArrowRight,
