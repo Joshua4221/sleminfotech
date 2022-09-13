@@ -9,7 +9,7 @@ export const NavArray = [
     section: [
       {
         image: Logo,
-        imageText: "SLEM INFO TECH",
+        imageText: "SLEM INFOTECH",
         classbody: "firstlayoutbody",
         classname: "firstlayoutname",
         classitem: "firstlayoutitem",

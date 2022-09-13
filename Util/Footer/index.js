@@ -11,7 +11,7 @@ export const FooterArray = [
     section: [
       {
         image: Image,
-        imageText: "SLEM INFO TECH",
+        imageText: "SLEM INFOTECH",
         text: "No. 4 Efab City Estate Life-Camp Abuja FCT, Nigeria.",
         classbody: "firstClassbody",
         classname: "firstClassname",
@@ -21,28 +21,28 @@ export const FooterArray = [
         linkarray: [
           {
             linkIcon: BsTwitter,
-            link: "",
+            link: "www.twitter.com/sleminfotech",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
           },
           {
             linkIcon: BsInstagram,
-            link: "",
+            link: "www.instagram.com/sleminfotech",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
           },
           {
             linkIcon: FaFacebookF,
-            link: "",
+            link: "www.facebook.com/sleminfotech",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
           },
           {
             linkIcon: BsLinkedin,
-            link: "",
+            link: "www.twitter.com/sleminfotech",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
@@ -86,16 +86,16 @@ export const FooterArray = [
             classicon: "iconlink",
             classitem: "linktextText",
           },
-          // {
-          //   linkIcon: FiChevronRight,
-          //   link: "",
-          //   linkText: "Term",
-          //   classbody: "linkbodyText",
-          //   classname: "linkclassText",
-          //   classlinkicon: "linkiconText",
-          //   classicon: "iconlink",
-          //   classitem: "linktextText",
-          // },
+          {
+            linkIcon: FiChevronRight,
+            link: "",
+            linkText: "privacy policy",
+            classbody: "linkbodyText",
+            classname: "linkclassText",
+            classlinkicon: "linkiconText",
+            classicon: "iconlink",
+            classitem: "linktextText",
+          },
         ],
       },
       {

@@ -23,7 +23,7 @@ const ContactPageComp = () => {
           <p>Call us or reach out with any preferable messenger</p>
           <p> 09049491136</p>
           <p>08054099408</p>
-          <p> contact@saleminfotech.com</p>
+          <p> contact@sleminfotech.com</p>
           <div className="icons">
             <Link href={"#"}>
               <a>

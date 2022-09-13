@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { SoftwareServiceDiv } from "./software.styte";
 import C_Cards from "../../Universal-Components/C_Cards";
 import { withTheme } from "styled-components";
@@ -6,8 +6,16 @@ import { HomeServiceSectionArray } from "../../Util/SoftwareServices/HomeService
 import HeroSubSection from "../../Universal-Components/HeroSubSection";
 import { HeroSection } from "../../Util/SoftwareServices/heroSection";
 import HeadingSection from "../../Universal-Components/HeadingSection";
+import Modals from "../../Universal-Components/Modals";
+import Form from "../../Universal-Components/Form";
 
 const SoftwareServicesPage = ({ theme }) => {
+  const [showModal, setShowModal] = useState(false);
+
+  const HandleModal = () => {
+    setShowModal(!showModal);
+  };
+
   return (
     <SoftwareServiceDiv color={theme}>
       <HeroSubSection herosubsectionarray={HeroSection} />
@@ -27,7 +35,7 @@ const SoftwareServicesPage = ({ theme }) => {
             Start working with Slem Info Tech that can provide everything you
             need to generate awareness, drive traffic, connect.
           </p>
-          <button className={"ServiceLink"}>
+          <button onClick={HandleModal} className={"ServiceLink"}>
             <div className={"ServiceLinkBody"}>
               <div className={"ServiceLinkText"}>
                 <p>Contact Us</p>
@@ -35,6 +43,7 @@ const SoftwareServicesPage = ({ theme }) => {
             </div>
           </button>
         </div>
+        {showModal && <Modals ModalComponent={Form} setValue={setShowModal} />}
       </div>
     </SoftwareServiceDiv>
   );

@@ -30,7 +30,7 @@ const ITConstulation = ({ theme }) => {
               <p>
                 Information technology (IT) Consulting services help improve the
                 performace, scalability and competitiveness of your company
-                through right technology enablement and usage. In It since 1989,
+                through right technology enablement and usage. In It since 2014,
                 ScienceSoft can expertly guide your IT and digital
                 transformation initiatives from strategy to implementation.
               </p>

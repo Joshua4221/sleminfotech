@@ -25,13 +25,13 @@ export const outSourcingArr = [
     image: ImageOne,
     title: "What we do",
     content:
-      "On behalf of our clients, Slem Info Tech  can execute software projects by operating and using agile best practices. We also provide outsourcing of custom software development projects where the Senior Experts are working , employed, and led by Plavno.",
+      "On behalf of our clients, Slem Info Tech  can execute software projects by operating and using agile best practices. We also provide outsourcing of custom software development projects where the Senior Experts are working , employed, and led by Slem Info Tech.",
   },
   {
     title: "What we offer",
-    content: `Slem Info Tech  can take over (part of) your new or ongoing software development project. An example of this can be a mobile development project. Specific apps, website development, webshops, back-end applications using a range of technologies can be developed for you by Plavno.
+    content: `Slem Info Tech  can take over (part of) your new or ongoing software development project. An example of this can be a mobile development project. Specific apps, website development, webshops, back-end applications using a range of technologies can be developed for you by Slem Info Tech.
       
-      Plavno can fully control the project, or it can be under your control/supervision. We have plenty of possibilities.`,
+    Slem Info Tech can fully control the project, or it can be under your control/supervision. We have plenty of possibilities.`,
     image: ImageTwo,
   },
   {

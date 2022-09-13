@@ -19,6 +19,8 @@ import { dataArray, developedProject } from "../../Util/Home/solutions";
 import { TechnologyArray } from "../../Util/Home/technology";
 import { ClientProjectsArray } from "../../Util/Home/clientProject";
 import { FaAngleRight, FaAngleLeft } from "react-icons/fa";
+import Modals from "../../Universal-Components/Modals";
+import Form from "../../Universal-Components/Form";
 
 const HomePage = ({ theme, companyArray }) => {
   const arr1 = TechnologyArray.slice(0, 4);
@@ -36,12 +38,17 @@ const HomePage = ({ theme, companyArray }) => {
   const [details, setDetails] = useState(developedProject[0]);
   const [technologies, setTechnologies] = useState(techArr[0]);
   const [clientIndex, setClientIndex] = useState(0);
+  const [showModal, setShowModal] = useState(false);
 
   const timeoutRef = useRef(null);
   const timeoutRefTech = useRef(null);
   // const timeoutRef = useRef(null);
 
   let timeIntervals = 5000;
+
+  const HandleModal = () => {
+    setShowModal(!showModal);
+  };
 
   const Slider = useCallback(() => {
     setIndex((prevIndex) =>
@@ -116,8 +123,11 @@ const HomePage = ({ theme, companyArray }) => {
 
             <div className={"heroSectionDetailsbdyfooter"}>
               <div className={"heroSectionDetailsbdyfooterheader"}>
-                <button>Hire Tech experts</button>
+                <button onClick={HandleModal}>Hire Tech experts</button>
               </div>
+              {showModal && (
+                <Modals ModalComponent={Form} setValue={setShowModal} />
+              )}
               <div className={"heroSectionDetailsbdyfootercontent"}>
                 <p>Featured In</p>
                 {companyArray?.map((item, key) => (
