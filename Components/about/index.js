@@ -1,5 +1,8 @@
 import React from "react";
-import { FiGlobe } from "react-icons/fi";
+import { FiGlobe, FiClock } from "react-icons/fi";
+import { FaWallet } from "react-icons/fa";
+import { TiWaves } from "react-icons/ti";
+import { BsPeopleFill } from "react-icons/bs";
 import {
   ImageTextContainer,
   NumberText,
@@ -39,15 +42,31 @@ const AboutComp = () => {
         <div className="iconContainer">
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Here in 24hrs"}
             text={
               "At Slem InfoTech we introduce you to our Tech Experts within 24hrs."
             }
-            Icon={<FiGlobe />}
+            Icon={<FiClock />}
           />
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Cost-effective"}
+            text={
+              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+            }
+            Icon={<FaWallet />}
+          />
+          <IconText
+            classL="iconText"
+            title={"Flexible scaling"}
+            text={
+              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+            }
+            Icon={<TiWaves />}
+          />
+          <IconText
+            classL="iconText"
+            title={"Flexible scaling"}
             text={
               "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
             }
@@ -55,7 +74,7 @@ const AboutComp = () => {
           />
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Timezone Aligned"}
             text={
               "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
             }
@@ -63,27 +82,11 @@ const AboutComp = () => {
           />
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Mitigate the risk in hiring"}
             text={
               "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
             }
-            Icon={<FiGlobe />}
-          />
-          <IconText
-            classL="iconText"
-            title={"header"}
-            text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
-            }
-            Icon={<FiGlobe />}
-          />
-          <IconText
-            classL="iconText"
-            title={"header"}
-            text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
-            }
-            Icon={<FiGlobe />}
+            Icon={<BsPeopleFill />}
           />
         </div>
       </div>
