@@ -4,7 +4,7 @@ export const DropDownDiv = styled.div`
   /* text-align: center; */
   background-color: ${({ color }) => color.SectionColor};
   position: absolute;
-  left: ${({ details }) => (details === "service" ? "8.75rem" : "0.65rem")};
+  left: ${({ details }) => (details === "service" ? "14.89rem" : "6.79rem")};
   display: ${({ details }) => (details === "about" ? "flex" : "block")};
   justify-content: center;
   flex-wrap: ${({ details }) => details === "about" && "wrap"};
