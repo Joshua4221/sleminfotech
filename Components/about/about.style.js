@@ -18,6 +18,9 @@ export const StyledAbout = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
   }
+  .mainText {
+    color: #a34786;
+  }
   .iconContainer {
     display: flex;
     flex-wrap: wrap;
@@ -28,9 +31,22 @@ export const StyledAbout = styled.div`
     }
     .iconText {
       width: 30%;
-      background-color: blue;
+      /* background-color: #a34786; */
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+        rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
       margin: 1rem 0;
       padding: 1rem;
+      color: #a34786;
+      border-radius: 10px;
+      :hover {
+        transform: scale(1.05);
+        transition-duration: 1s;
+        /* background-color: #a3478667; */
+      }
+      h1 {
+        font-size: 22px;
+        margin: 1rem 0;
+      }
       @media screen and (max-width: 600px) {
         width: 90%;
       }

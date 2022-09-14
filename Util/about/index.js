@@ -1,4 +1,14 @@
 import ImageOne from "../../Asset/IMG-20220829-WA0016.jpg";
+
+export const AboutHero = [
+  {
+    header: "About Us",
+  },
+  {
+    text: `Slem InfoTech provides you with highly skilled remote Tech Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result.`,
+  },
+];
+
 export const aboutImageTextArr = [
   {
     image: ImageOne,
@@ -21,6 +31,7 @@ export const sideText = [
       "Tech Experts who are listening to you and answering with software development services",
     content:
       "We've earned our expertise by building custom B2B and B2C applications for a variety of industries and business domains, including, but not limited to Healthcare, E-Learning, FinTech, Travel & Hospitality and etc.",
+    classpara: "paraContent",
   },
 ];
 export const whatWeDoArr = [

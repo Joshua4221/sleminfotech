@@ -22,6 +22,13 @@ export const NavArray = [
     classmain: "secondLayout",
     section: [
       {
+        link: "/",
+        linktext: "HOME",
+        classbody: "secondlayoutbody",
+        classname: "secondlayoutname",
+        classitem: "secondlayoutitem",
+      },
+      {
         dropdown: "COMPANY",
         details: "company",
         classbody: "secondlayoutbodydropdown",

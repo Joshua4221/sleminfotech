@@ -1,27 +1,30 @@
 import React from "react";
-import { FiGlobe } from "react-icons/fi";
-
+import { FiGlobe, FiClock } from "react-icons/fi";
+import { FaWallet } from "react-icons/fa";
+import { TiWaves } from "react-icons/ti";
+import { BsPeopleFill } from "react-icons/bs";
 import {
   ImageTextContainer,
   NumberText,
   SideBySideText,
   IconText,
 } from "../../Universal-Components/image_text";
-import { aboutImageTextArr, sideText, whatWeDoArr } from "../../Util/about";
+import {
+  AboutHero,
+  aboutImageTextArr,
+  sideText,
+  whatWeDoArr,
+} from "../../Util/about";
 import Header from "../../Universal-Components/header";
 import bgImage from "../../Asset/m-bg.png";
 import { StyledAbout } from "./about.style";
 import ContactSect from "../../Universal-Components/contact_sect";
+import HeroSubSection from "../../Universal-Components/HeroSubSection";
 
 const AboutComp = () => {
   return (
     <StyledAbout>
-      <Header
-        title={"About Us"}
-        content={
-          "Slem InfoTech provides you with highly skilled remote Tech Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result."
-        }
-      />
+      <HeroSubSection herosubsectionarray={AboutHero} />
       <ImageTextContainer imageTextArr={aboutImageTextArr} />
       <NumberText />
       <SideBySideText textHolder={sideText} />
@@ -29,6 +32,7 @@ const AboutComp = () => {
         textHolder={whatWeDoArr}
         BGColor={"white"}
         TextColor={"navy"}
+        details={"text"}
       />
       <div className="backgroundImage"></div>
       <div className="mainBenefit">
@@ -38,15 +42,31 @@ const AboutComp = () => {
         <div className="iconContainer">
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Here in 24hrs"}
             text={
               "At Slem InfoTech we introduce you to our Tech Experts within 24hrs."
             }
-            Icon={<FiGlobe />}
+            Icon={<FiClock />}
           />
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Cost-effective"}
+            text={
+              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+            }
+            Icon={<FaWallet />}
+          />
+          <IconText
+            classL="iconText"
+            title={"Flexible scaling"}
+            text={
+              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+            }
+            Icon={<TiWaves />}
+          />
+          <IconText
+            classL="iconText"
+            title={"Flexible scaling"}
             text={
               "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
             }
@@ -54,7 +74,7 @@ const AboutComp = () => {
           />
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Timezone Aligned"}
             text={
               "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
             }
@@ -62,27 +82,11 @@ const AboutComp = () => {
           />
           <IconText
             classL="iconText"
-            title={"header"}
+            title={"Mitigate the risk in hiring"}
             text={
               "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
             }
-            Icon={<FiGlobe />}
-          />
-          <IconText
-            classL="iconText"
-            title={"header"}
-            text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
-            }
-            Icon={<FiGlobe />}
-          />
-          <IconText
-            classL="iconText"
-            title={"header"}
-            text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
-            }
-            Icon={<FiGlobe />}
+            Icon={<BsPeopleFill />}
           />
         </div>
       </div>

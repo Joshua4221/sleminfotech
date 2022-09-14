@@ -45,6 +45,9 @@ export const ImageTextHolder = styled.div`
         color: #1b2d6b;
         white-space: pre-line;
       }
+      .paraContent {
+        color: #fff;
+      }
       h2 {
         color: #1b2d6b;
         font-style: normal;
@@ -82,9 +85,11 @@ export const StyledNumText = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 5rem;
+  color: #8d3d72;
   /* background-color: red; */
   div {
     text-align: center;
+    color: #a34786;
     @media screen and (max-width: 600px) {
       margin: 2rem 0;
     }
@@ -103,23 +108,17 @@ export const StyledNumText = styled.div`
   }
 `;
 export const StyledSideTextContainer = styled.div`
-  background: ${(props) => props.bgColor || "navy"};
+  background: ${(props) => props.bgColor || "#8D3D72"};
   color: ${(props) => props.txtColor || "#fff"};
   padding: 2rem 0;
 `;
 export const StyledIconDiv = styled.div`
   .cliped {
-    clip-path: polygon(
-      29.78% 30.34%,
-      49.19% 20.12%,
-      68.12% 32.38%,
-      68.12% 54.92%,
-      49.19% 66.01%,
-      25.88% 52.35%
-    );
-    background-color: red;
-    width: 60%;
-    height: 120px;
+    background-image: ${(props) => props.bG || "gray"};
+    width: 30%;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
