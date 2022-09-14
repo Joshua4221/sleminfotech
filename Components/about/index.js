@@ -1,27 +1,27 @@
 import React from "react";
 import { FiGlobe } from "react-icons/fi";
-
 import {
   ImageTextContainer,
   NumberText,
   SideBySideText,
   IconText,
 } from "../../Universal-Components/image_text";
-import { aboutImageTextArr, sideText, whatWeDoArr } from "../../Util/about";
+import {
+  AboutHero,
+  aboutImageTextArr,
+  sideText,
+  whatWeDoArr,
+} from "../../Util/about";
 import Header from "../../Universal-Components/header";
 import bgImage from "../../Asset/m-bg.png";
 import { StyledAbout } from "./about.style";
 import ContactSect from "../../Universal-Components/contact_sect";
+import HeroSubSection from "../../Universal-Components/HeroSubSection";
 
 const AboutComp = () => {
   return (
     <StyledAbout>
-      <Header
-        title={"About Us"}
-        content={
-          "Slem InfoTech provides you with highly skilled remote Tech Experts who form part of your team or form your company’s entire development team. Our team becomes your team enabling you to scale with the best result."
-        }
-      />
+      <HeroSubSection herosubsectionarray={AboutHero} />
       <ImageTextContainer imageTextArr={aboutImageTextArr} />
       <NumberText />
       <SideBySideText textHolder={sideText} />
@@ -29,6 +29,7 @@ const AboutComp = () => {
         textHolder={whatWeDoArr}
         BGColor={"white"}
         TextColor={"navy"}
+        details={"text"}
       />
       <div className="backgroundImage"></div>
       <div className="mainBenefit">

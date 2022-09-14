@@ -73,12 +73,12 @@ export const NumberText = () => {
     </StyledNumText>
   );
 };
-export const SideBySideText = ({ textHolder, BGColor, TextColor }) => {
+export const SideBySideText = ({ textHolder, BGColor, TextColor, details }) => {
   return (
     <StyledSideTextContainer bgColor={BGColor} txtColor={TextColor}>
       {textHolder.map((item, key) => (
         <>
-          <ImageTextHolder layout={key === 1 && "row"}>
+          <ImageTextHolder details={details} layout={key === 1 && "row"}>
             <div className="side-text">
               {item.boldText ? (
                 <h2>{item.boldText}</h2>
@@ -101,7 +101,7 @@ export const SideBySideText = ({ textHolder, BGColor, TextColor }) => {
             <div className="side-text">
               <div className="text-div">
                 <h2>{item.title}</h2>
-                <p>{item.content}</p>
+                <p className={`${item.classpara}`}>{item.content}</p>
                 <div className="mutliContentContainer">
                   {item.multiContent ? (
                     item.multiContent?.map((content, key) => (
@@ -122,9 +122,9 @@ export const SideBySideText = ({ textHolder, BGColor, TextColor }) => {
 export const IconText = ({ title, text, Icon, classL }) => {
   return (
     <StyledIconDiv className={classL}>
-      <div className="cliped">
+      {/* <div className="cliped">
         <h3>{Icon}</h3>
-      </div>
+      </div> */}
       <h1>{title}</h1>
       <p>{text}</p>
     </StyledIconDiv>

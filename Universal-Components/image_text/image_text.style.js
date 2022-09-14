@@ -45,6 +45,9 @@ export const ImageTextHolder = styled.div`
         color: #1b2d6b;
         white-space: pre-line;
       }
+      .paraContent {
+        color: #fff;
+      }
       h2 {
         color: #1b2d6b;
         font-style: normal;
@@ -82,6 +85,7 @@ export const StyledNumText = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 5rem;
+  color: #8d3d72;
   /* background-color: red; */
   div {
     text-align: center;
@@ -103,7 +107,7 @@ export const StyledNumText = styled.div`
   }
 `;
 export const StyledSideTextContainer = styled.div`
-  background: ${(props) => props.bgColor || "navy"};
+  background: ${(props) => props.bgColor || "#8D3D72"};
   color: ${(props) => props.txtColor || "#fff"};
   padding: 2rem 0;
 `;
