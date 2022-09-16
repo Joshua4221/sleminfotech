@@ -78,7 +78,7 @@ export const FooterArray = [
           },
           {
             linkIcon: FiChevronRight,
-            link: "/contact",
+            link: "/contacts",
             linkText: "Contact",
             classbody: "linkbodyText",
             classname: "linkclassText",
@@ -179,6 +179,6 @@ export const FooterArray = [
   {
     classmain: "secondlayout",
     classname: "secondlayoutname",
-    text: "Salem InfoTech © 2022.| All Rights Reserved.",
+    text: "Slem InfoTech © 2022.| All Rights Reserved.",
   },
 ];
