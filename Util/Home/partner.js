@@ -1,6 +1,6 @@
-import Image1 from "../../Asset/zeespace logo 4 png.png";
-import Image2 from "../../Asset/IMGemovebgpreview.png";
-import Image3 from "../../Asset/Poshtok-logo1cop.png";
+import Image1 from "../../Asset/resent-logo.jpg";
+// import Image2 from "../../Asset/IMGemovebgpreview.png";
+// import Image3 from "../../Asset/Poshtok-logo1cop.png";
 // import Image4 from "../../Asset/KIA.png";
 // import Image5 from "../../Asset/hyindai.png";
 // import Image6 from "../../Asset/Google.png";
@@ -9,8 +9,8 @@ import Image3 from "../../Asset/Poshtok-logo1cop.png";
 
 export const parternsArrayIcon = [
   { image: Image1 },
-  { image: Image2 },
-  { image: Image3 },
+  // { image: Image2 },
+  // { image: Image3 },
   // { image: Image4 },
   // { image: Image5 },
   // { image: Image6 },
