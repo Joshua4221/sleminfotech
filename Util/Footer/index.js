@@ -88,7 +88,7 @@ export const FooterArray = [
           },
           {
             linkIcon: FiChevronRight,
-            link: "",
+            link: "https://drive.google.com/file/d/1RsWVXh--xT0z4h2uKi1tsp7GtPrS6D0D/view?usp=drivesdk",
             linkText: "privacy policy",
             classbody: "linkbodyText",
             classname: "linkclassText",
