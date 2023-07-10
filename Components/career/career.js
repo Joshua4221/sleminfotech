@@ -66,7 +66,7 @@ const CareerPage = ({ theme }) => {
           <div className="it-hero-content-statement">
             <h2>JOIN OUR FRIENDLY TEAM</h2>
             <p className="it-hero-content-statement-para">
-              We are looking for talentedand purposeful people
+              We are looking for talented and purposeful people.
             </p>
           </div>
           <div className="it-hero-content-form">
@@ -94,17 +94,17 @@ const CareerPage = ({ theme }) => {
       </div>
       <div className="aboutBody">
         <HeadingSection
-          title={"About us"}
+          title={"ZEESPACE NIGERIA"}
           paragraph={
-            "We provide a variety of options to help you scale your business"
+            ""
           }
         />
         <div className="aboutDescription">
           <p>
-            We have been working in the IT market since 2007. During this time,
+            We have been working in the Technology market since 2017. During this time,
             we have implemented more than 300 projects and cooperated with many
             clients from 15 countries around the world. Our company has doubled
-            in size in 2021, and we plan to double our team once again . We
+            in size in 2022, and we plan to double our team once again. We
             develop web/mobile applications, e-commerce systems used by millions
             of people.
           </p>
@@ -134,9 +134,9 @@ const CareerPage = ({ theme }) => {
       </div>
       <div className="serviceDetails">
         <div className={"ServiceConnect"}>
-          <h2>{`Become a part of our professional team we need`}</h2>
+          <h2>{`Become a part of our professional team we need you`}</h2>
           <p className={"ServiceContent"}>
-            Start working with Slem InfoTech that can provide everything you
+            Start working with Zeespace Nigeria that can provide everything you
             need to generate awareness, drive traffic, connect.
           </p>
           <button onClick={HandleModal} className={"ServiceLink"}>

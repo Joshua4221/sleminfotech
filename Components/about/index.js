@@ -37,14 +37,14 @@ const AboutComp = () => {
       <div className="backgroundImage"></div>
       <div className="mainBenefit">
         <div className="mainText">
-          <h1>Main Benefits </h1>
+          <h1>Basic Benefits </h1>
         </div>
         <div className="iconContainer">
           <IconText
             classL="iconText"
-            title={"Here in 24hrs"}
+            title={"Hire in 24hrs"}
             text={
-              "At Slem InfoTech we introduce you to our Tech Experts within 24hrs."
+              "At Zeespace Nigeria we introduce you to our Tech Experts within 24hrs."
             }
             Icon={<FiClock />}
           />
@@ -52,7 +52,7 @@ const AboutComp = () => {
             classL="iconText"
             title={"Cost-effective"}
             text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+              "Zeespace Nigeria provides effective user requirements for your business."
             }
             Icon={<FaWallet />}
           />
@@ -60,15 +60,15 @@ const AboutComp = () => {
             classL="iconText"
             title={"Flexible scaling"}
             text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+              "Zeespace Nigeria build functional and responsive enterprise software systems."
             }
             Icon={<TiWaves />}
           />
           <IconText
             classL="iconText"
-            title={"Flexible scaling"}
+            title={"Best Technologies"}
             text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+              "Zeespace Nigeria deliver your projects with world class technologies."
             }
             Icon={<FiGlobe />}
           />
@@ -76,15 +76,15 @@ const AboutComp = () => {
             classL="iconText"
             title={"Timezone Aligned"}
             text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+              "At Zeespace Nigeria, Our Experts deliver quality products on time."
             }
             Icon={<FiGlobe />}
           />
           <IconText
             classL="iconText"
-            title={"Mitigate the risk in hiring"}
+            title={"Best Management"}
             text={
-              "At Slem InfoTech, we introduce you to our Tech Experts within 24hrs."
+              "At Zeespace Nigeria, We manage products with the best approach."
             }
             Icon={<BsPeopleFill />}
           />

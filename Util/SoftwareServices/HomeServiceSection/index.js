@@ -10,7 +10,7 @@ export const HomeServiceSectionArray = [
   {
     icon: FaLaptopCode,
     header: "Web Development",
-    paragraph: `We give global brands design and build superior digital websites, user experiences across all platforms and devices.`,
+    paragraph: `We Design And Build World Class digital websites, user experiences across all platforms and devices.`,
   },
   {
     icon: BsFillPhoneFill,
@@ -19,8 +19,8 @@ export const HomeServiceSectionArray = [
   },
   {
     icon: HiShieldCheck,
-    header: "Data Security",
-    paragraph: `Slem InfoTech security professionals will help you identify technology solutions that meet your organization’s needs.`,
+    header: "SOFTWARE TRAINING",
+    paragraph: `Zeespace Instructors Train Individuals, Groups And Organizations By Offering Our World Class Technology Skills To Them..`,
   },
   {
     icon: FiPenTool,

@@ -13,33 +13,32 @@ const ContactPageComp = () => {
       <HeroSubSection herosubsectionarray={ContactHeroArray} />
       <div className="contact-info">
         <p className="contact-info-p">
-          No matter if you come to us with a ready project, idea, or only with
-          doubts to dispel,Slem InfoTech are always happy to help and we are not
-          afraid of even the craziest questions and proposals. Just contact us!
+          Contact Us For Ready Product, Modification, Management, New idea, Training ETC. We Are Always Happy To Help And We Are Not
+          Afraid Of Even The Craziest Questions And Proposals. Just Contact Us!
         </p>
         <div className="line-through"></div>
         <div className="contact-address">
-          <p>Call us or reach out with any preferable messenger</p>
-          <p> 09049491136</p>
-          <p>08054099408</p>
-          <p> contact@sleminfotech.com</p>
+          <p>Contact Us For Business</p>
+          <p> 08103568291</p>
+          <p>08085380445</p>
+          <p> contact@zeespacenigeria.com</p>
           <div className="icons">
-            <Link href={"#"}>
+            <Link href={"www.twitter.com/zeespacenigeria"}>
               <a>
                 <BsTwitter />
               </a>
             </Link>{" "}
-            <Link href={"#"}>
+            <Link href={"www.instagram.com/zeespacenigeria"}>
               <a>
                 <BsInstagram />
               </a>
             </Link>
-            <Link href={"#"}>
+            <Link href={"www.linkedin.com/company/zeespace-nigeria"}>
               <a>
                 <BsLinkedin />
               </a>
             </Link>
-            <Link href={"#"}>
+            <Link href={"www.facebook.com/zeespacehub"}>
               <a>
                 <FaFacebookF />
               </a>

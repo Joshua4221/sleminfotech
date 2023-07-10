@@ -21,6 +21,7 @@ export const NavDiv = styled.div`
           display: flex;
           align-items: center;
           padding: 0px 10px 0px 0px;
+         
 
           .firstlayoutitem {
             width: 65px;
@@ -244,6 +245,6 @@ export const NavDiv = styled.div`
   }
 
   @media screen and (max-width: 950px) {
-    padding: 0;
+    padding: 10px;
   }
 `;

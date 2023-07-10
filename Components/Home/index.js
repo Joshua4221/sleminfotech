@@ -117,13 +117,13 @@ const HomePage = ({ theme, companyArray }) => {
         <div className={"heroSectionDetails"}>
           <div className={"heroSectionDetailsbdy"}>
             <div className={"heroSectionDetailsbdyheader"}>
-              <h3>Contact Us To Hire Tech Experts</h3>
-              <p>Quickly engage client web services.</p>
+              <h3>Contact Us For Technology Services</h3>
+              <p>We Are Friendly Software Partner.</p>
             </div>
 
             <div className={"heroSectionDetailsbdyfooter"}>
               <div className={"heroSectionDetailsbdyfooterheader"}>
-                <button onClick={HandleModal}>Hire Tech experts</button>
+                <button onClick={HandleModal}>Let's Talk Business</button>
               </div>
               {showModal && (
                 <Modals ModalComponent={Form} setValue={setShowModal} />
@@ -168,7 +168,7 @@ const HomePage = ({ theme, companyArray }) => {
           <HeadingSection
             title={"About us"}
             paragraph={
-              "We provide a variety of options to help you scale your business"
+              "We provide a variety of Services to help your business Succeed"
             }
           />
           <div>
@@ -178,15 +178,15 @@ const HomePage = ({ theme, companyArray }) => {
 
         <div className={"partners"}>
           <HeadingSection
-            title={"Partners"}
+            title={"Our Partners"}
             paragraph={
-              "We provide a variety of options to help you scale your business"
+              ""
             }
           />
           <div className={"partnersbody"}>
             <div className={"partnersbodyOne"}>
               <p>
-                Together with our partner, we shape the future of digital World.
+                Together with our partners, we shape the future of digital World.
               </p>
             </div>
             <div className={"partnersbodyTwo"}>
@@ -207,7 +207,7 @@ const HomePage = ({ theme, companyArray }) => {
         <div className={"developer"}>
           <HeadingSection
             subtitle={
-              "We provide a variety of options to help you scale your business"
+              ""
             }
           />
           <div>
@@ -275,7 +275,7 @@ const HomePage = ({ theme, companyArray }) => {
           <HeadingSection
             title={"Technologies"}
             paragraph={
-              "Slem InfoTech provides you with motivated and experienced remote Tech Experts. With our business model, you have options to choose the solution that best fits your need."
+              "Zeespace Nigeria provides you with motivated and experienced Tech Experts. With our business model, you have options to choose the solution that best fits your need."
             }
           />
           <div>

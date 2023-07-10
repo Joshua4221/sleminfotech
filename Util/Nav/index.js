@@ -1,4 +1,4 @@
-import Logo from "../../Asset/log.png";
+import Logo from "../../Asset/zeespace logo.png";
 import { FaSearch } from "react-icons/fa";
 import SearchField from "../../Universal-Components/SearchFieldComponent";
 import { FiMenu } from "react-icons/fi";
@@ -9,7 +9,7 @@ export const NavArray = [
     section: [
       {
         image: Logo,
-        imageText: "SLEM INFOTECH",
+        imageText: "ZEESPACE NIGERIA",
         classbody: "firstlayoutbody",
         classname: "firstlayoutname",
         classitem: "firstlayoutitem",
@@ -99,7 +99,7 @@ export const NavArray = [
       },
       {
         link: "/contacts",
-        linktext: "CONTACTS",
+        linktext: "CONTACT",
         classbody: "secondlayoutbody",
         classname: "secondlayoutname",
         classitem: "secondlayoutitem",

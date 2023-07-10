@@ -1,6 +1,6 @@
-import Image1 from "../../Asset/resent-logo.jpg";
-// import Image2 from "../../Asset/IMGemovebgpreview.png";
-// import Image3 from "../../Asset/Poshtok-logo1cop.png";
+import Image1 from "../../Asset/Poshtok-logo1.png";
+//import Image2 from "../../Asset/Poshtok-logo1.png";
+// import Image3 from "../../Asset/IMGemovebgpreview.png";
 // import Image4 from "../../Asset/KIA.png";
 // import Image5 from "../../Asset/hyindai.png";
 // import Image6 from "../../Asset/Google.png";

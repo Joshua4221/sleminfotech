@@ -1,4 +1,4 @@
-import Image from "../../Asset/log.png";
+import Image from "../../Asset/zeespace2.jpeg";
 import { BsTwitter, BsInstagram, BsLinkedin } from "react-icons/bs";
 import { FaFacebookF, FaArrowRight } from "react-icons/fa";
 import { FiChevronRight } from "react-icons/fi";
@@ -11,8 +11,8 @@ export const FooterArray = [
     section: [
       {
         image: Image,
-        imageText: "SLEM INFOTECH",
-        text: "No. 4 Efab City Estate Life-Camp Abuja FCT, Nigeria.",
+        imageText: "ZEESPACE NIGERIA",
+        text: "4 Fred Avenue, Phase 1 Jikwoyi Abuja NG.",
         classbody: "firstClassbody",
         classname: "firstClassname",
         classitem: "firstClassitem",
@@ -21,28 +21,28 @@ export const FooterArray = [
         linkarray: [
           {
             linkIcon: BsTwitter,
-            link: "https://twitter.com/sleminfotech",
+            link: "https://twitter.com/Zeespacenigeria",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
           },
           {
             linkIcon: BsInstagram,
-            link: "https://www.instagram.com/sleminfotech/",
+            link: "https://www.instagram.com/zeespacenigeria/",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
           },
           {
             linkIcon: FaFacebookF,
-            link: `https://web.facebook.com/Sleminfotech/`,
+            link: `https://www.facebook.com/zeespacehub/`,
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
           },
           {
             linkIcon: BsLinkedin,
-            link: "www.twitter.com/sleminfotech",
+            link: "https://www.twitter.com/zeespace-nigeria",
             classbody: "linkbody",
             classname: "linkclass",
             classlinkicon: "linkicon",
@@ -179,6 +179,6 @@ export const FooterArray = [
   {
     classmain: "secondlayout",
     classname: "secondlayoutname",
-    text: "Slem InfoTech © 2022.| All Rights Reserved.",
+    text: "Zeespace Nigeria © 2022.| All Rights Reserved.",
   },
 ];

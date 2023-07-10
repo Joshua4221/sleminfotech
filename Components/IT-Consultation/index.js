@@ -22,17 +22,16 @@ const ITConstulation = ({ theme }) => {
       <div className="it-hero-section">
         <div className="it-hero-content">
           <div className="it-hero-content-statement">
-            <h2>Informtion Technology Consulting</h2>
+            <h2>Information Technology Consulting</h2>
             <p className="it-hero-content-statement-para">
-              Get Your Business and IT Strategies Aligned
+              Get Your Business And IT Strategies Aligned
             </p>
             <div className="it-hero-content-statement-discription">
               <p>
-                Information technology (IT) Consulting services help improve the
+                Our Information Technology (IT) Consulting Services help You improve the
                 performace, scalability and competitiveness of your company
-                through right technology enablement and usage. In It since 2014,
-                ScienceSoft can expertly guide your IT and digital
-                transformation initiatives from strategy to implementation.
+                through right technology enablement and usage. 
+               
               </p>
             </div>
           </div>
@@ -41,7 +40,7 @@ const ITConstulation = ({ theme }) => {
               className="it-hero-content-form-button"
               onClick={HandleModal}
             >
-              <p>Request IT Consulting Services</p>
+              <p>Consult Us</p>
               <FaArrowRight className="it-hero-content-form-icon" />
             </button>
             {showModal && (

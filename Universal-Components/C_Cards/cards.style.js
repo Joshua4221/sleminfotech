@@ -65,13 +65,13 @@ export const CCardDiv = styled.div`
 
   .ccardbody {
     width: ${({ details, projects, service }) =>
-      details ? "20%" : projects ? "100%" : service ? "32%" : "48%"};
+      details ? "20%" : projects ? "100%" : service ? "32%" : "24%"};
     text-align: ${({ details, service }) =>
       details ? "center" : service ? "center" : "left"};
     color: ${({ color }) => color.MajorColor};
-    padding: ${({ about }) => (about ? "20px 25px" : "20px 10px")};
+    padding: ${({ about }) => (about ? "20px 25px" : "10px 10px")};
     border-radius: 20px;
-    margin: 10px 5px;
+    margin: 10px 1px;
     background-color: ${({ color, details }) =>
       details && color.InputColorBorder};
     /* box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.151); */
@@ -80,6 +80,7 @@ export const CCardDiv = styled.div`
     &:hover {
       box-shadow: ${({ projects }) =>
         !projects && "0px 3px 6px 0px rgba(0, 0, 0, 0.151)"};
+        
     }
 
     .ccardIconbody {
